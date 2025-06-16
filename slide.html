@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@11.2.8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/sun-typeface/SUITE/fonts/static/woff2/SUITE.css');
+        body,html {height:100%;margin:0;padding:0}
+        ul, li, dl, dt, dd, p, span{margin:0;padding:0}
+        a{text-decoration:none}
+        li{list-style:none}
+        a{text-decoration:none}
+        *, :after, :before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+        :root{--primary:#ff9001;--mainsize:1500px;--k-font:'SUITE'}
+
+        #inc03{overflow:hidden;position:relative;padding:120px 0 140px 0;font-size:16px;line-height:1.6;color:#666;font-family:var(--k-font)}
+        #inc03 *{letter-spacing:0;word-break:keep-all}
+        #inc03 a{color:#777}
+        #inc03:after{position:absolute;content:'';left:0;top:0;width:100%;height:550px;background: #fff9f0;background-size:cover;background-position:50% 40%;border-radius:0 200px 0 0;z-index:-1}
+        #inc03 .inner{width:100%;max-width:1500px;margin:0 auto}
+        #inc03 .inner .tit{width:max-content;margin:0 auto;color:#777;font-size:18px;text-align:center}
+        #inc03 .inner .tit .control{display:flex;align-items:center;gap:70px;color:#111}
+        #inc03 .inner .tit .control svg{height:18px;color:#111}
+        #inc03 .inner .tit .control .swiper-button-next:after, #inc03 .control .swiper-button-prev:after{display:none}
+        #inc03 .inner .tit p{padding-bottom:20px;color:#111;font-weight:800;font-size:38px}
+        #inc03 .inner .gall_slide{overflow:hidden;position:relative;margin-top:100px}
+        #inc03 .inner .gall_slide .txt{padding:38px 0 43px 60px;font-size:17px;font-weight:500}
+        #inc03 .inner .gall_slide ul li .thum_img{height:430px;border-radius:0px;background-position:center;border-radius:10px;background-size:cover;transition:0.5s}
+        #inc03 .inner .gall_slide ul li .gall_txt{padding:60px 60px 0;margin-bottom:100px}
+        #inc03 .inner .gall_slide ul li .gall_txt .subj_txt{padding-bottom:15px;font-size:24px;font-weight:700;color:#111}
+        #inc03 .inner .gall_slide ul li .gall_txt .cont{font-size:16px;line-height:1.7;color:#777}
+        #inc03 .inner .gall_slide .swiper-pagination{position:relative;width:88%;height:3px;background:rgba(0,0,0,0.10)}
+        #inc03 .inner .gall_slide .swiper-pagination .swiper-pagination-progressbar-fill{background:var(--primary)}
+        #inc03 .inner .gall_slide .pager_wrap{padding-top:80px;display:flex;align-items:center}
+        #inc03 .inner .more_box{margin-left:auto;display:flex;align-items:center;gap:20px;color:#111;font-weight:700}
+        #inc03 .inner .more{display:flex;align-items:center;justify-content:center;margin-left:auto;width:36px;height:36px;background:var(--primary);border-radius:50px;text-align:center;transition:all 0.2s}
+        #inc03 .inner .more_box .more svg{width:14px;color:#fff;transition:all 0.4s}
+
+        #inc03 .control .next,#inc03 .control .prev{display:flex;align-items:center;justify-content:center;position:relative;width:45px;height:45px;border-radius:50%;background:#fff;border:1px solid #e1e1e1;cursor:pointer}
+        #inc03 .control .swiper-button-next:after, #inc03 .control .swiper-button-prev:after{display:none}
+
+        /* 반응형 [s] */
+        @media (hover:hover){
+            #inc03 .inner .more_box .more:hover{background:#222}
+            #inc03 .inner .more_box .more:hover svg{transform:rotate(270deg)}
+        }
+        @media (max-width:1380px){
+            #inc03 .inner{max-width:unset;width:95%}
+            #inc03 .inner .gall_slide ul li .thum_img{height:310px;background-position:top right}
+        }
+        @media (max-width:1024px){
+            #inc03{padding:90px 0 120px 0}
+            #inc03:after{height:430px;border-radius:0 150px 0 0}
+            #inc03 .inner .tit p{font-size:28px}
+            #inc03 .control .next, #inc03 .control .prev{width:42px;height:42px}
+            #inc03 .inner .tit{font-size:16px}
+            #inc03 .inner .gall_slide{margin-top:65px}
+            #inc03 .inner .gall_slide ul li .thum_img{height:315px}
+            #inc03 .inner .more{width:32px;height:32px}
+            #inc03 .inner .gall_slide .swiper-pagination{width:80%}
+        }
+        @media (max-width:768px){
+            #inc03{padding:80px 0 100px 0}
+            #inc03:after{border-radius:0 120px 0 0}
+            #inc03 .inner .tit{font-size:15px}
+            #inc03 .inner .tit p{font-size:23px}
+            #inc03 .inner .tit .control{justify-content:center;gap:40px}
+            #inc03 .control .next, #inc03 .control .prev{width:40px;height:40px}
+            #inc03 .inner .gall_slide{margin-top:34px}
+            #inc03 .inner .gall_slide ul li .thum_img{height:300px}
+            #inc03 .inner .gall_slide .pager_wrap{padding-top:50px}
+            #inc03 .inner .gall_slide .swiper-pagination{width:70%}
+            #inc03 .inner .more_box{gap:14px}
+            #inc03 .inner .more{width:30px;height:30px}
+        }
+        @media (max-width:480px){
+            #inc03{padding:70px 0 90px 0}
+            #inc03:after{height:335px;border-radius:0 85px 0 0}
+            #inc03 .inner .tit p{font-size:21px}
+            #inc03 .control .next, #inc03 .control .prev{width:34px;height:34px}
+            #inc03 .inner .gall_slide .swiper-pagination{width:65%}
+            #inc03 .inner .gall_slide ul li .thum_img{height:290px}
+            #inc03 .inner .gall_slide .pager_wrap{padding-top:30px}
+        }
+        @media (max-width:380px){
+            #inc03{padding:60px 0 80px 0}
+            #inc03:after{height:298px;border-radius:0 70px 0 0}
+            #inc03 .inner .tit{font-size:14px}
+            #inc03 .inner .tit p{font-size:19px}
+            #inc03 .control .next, #inc03 .control .prev{width:32px;height:32px}
+            #inc03 .inner .gall_slide{margin-top:30px}
+            #inc03 .inner .gall_slide ul li .thum_img{height:260px}
+            #inc03 .inner .gall_slide .swiper-pagination{width:62%}
+        }
+        /* 반응형 [e] */
+
+    </style>
+</head>
+<body>
+
+    <article id="inc03">
+        <div class="inner">
+            <div class="tit">
+                <div class="control">
+                    <div class="swiper-button-prev prev"><i data-feather="chevron-left"></i></div> 
+                    <p>함께 공유해요</p>
+                    <div class="swiper-button-next next"><i data-feather="chevron-right"></i></div> 
+                </div>
+                샘플장애인복지관의 특별하고 소중한 이야기를 소개합니다.
+            </div>
+            <div class="gall_slide">
+                <div class="swiper-container gall_list">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="">                      
+                                <div class="img_wrap">
+                                    <div class="thum_img" style="background-image:url(https://co1137-res.shiningcorp.com/data/editor/2407/thumb-736ccff3f71ced47e0106f2103e2c1a2_1721960900_9954_690x.jpg)"></div>
+                                </div>
+                            </a>
+                        </li>	
+                        <li class="swiper-slide">
+                            <a href="">                      
+                                <div class="img_wrap">
+                                    <div class="thum_img" style="background-image:url(https://co1137-res.shiningcorp.com/data/editor/2407/thumb-736ccff3f71ced47e0106f2103e2c1a2_1721960900_9954_690x.jpg)"></div>
+                                </div>
+                            </a>
+                        </li>	
+                        <li class="swiper-slide">
+                            <a href="">                      
+                                <div class="img_wrap">
+                                    <div class="thum_img" style="background-image:url(https://co1137-res.shiningcorp.com/data/editor/2407/thumb-736ccff3f71ced47e0106f2103e2c1a2_1721960900_9954_690x.jpg)"></div>
+                                </div>
+                            </a>
+                        </li>	
+                        <li class="swiper-slide">
+                            <a href="">                      
+                                <div class="img_wrap">
+                                    <div class="thum_img" style="background-image:url(https://co1137-res.shiningcorp.com/data/editor/2407/thumb-736ccff3f71ced47e0106f2103e2c1a2_1721960900_9954_690x.jpg)"></div>
+                                </div>
+                            </a>
+                        </li>	 
+                        <li class="swiper-slide">
+                            <a href="">                      
+                                <div class="img_wrap">
+                                    <div class="thum_img" style="background-image:url(https://co1137-res.shiningcorp.com/data/editor/2407/thumb-736ccff3f71ced47e0106f2103e2c1a2_1721960900_9954_690x.jpg)"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="">                      
+                                <div class="img_wrap">
+                                    <div class="thum_img" style="background-image:url(https://co1137-res.shiningcorp.com/data/editor/2407/thumb-736ccff3f71ced47e0106f2103e2c1a2_1721960900_9954_690x.jpg)"></div>
+                                </div>
+                            </a>
+                        </li>	
+                        <li class="swiper-slide">
+                            <a href="">                      
+                                <div class="img_wrap">
+                                    <div class="thum_img" style="background-image:url(https://co1137-res.shiningcorp.com/data/editor/2407/thumb-736ccff3f71ced47e0106f2103e2c1a2_1721960900_9954_690x.jpg)"></div>
+                                </div>
+                            </a>
+                        </li>	
+                        <li class="swiper-slide">
+                            <a href="">                      
+                                <div class="img_wrap">
+                                    <div class="thum_img" style="background-image:url(https://co1137-res.shiningcorp.com/data/editor/2407/thumb-736ccff3f71ced47e0106f2103e2c1a2_1721960900_9954_690x.jpg)"></div>
+                                </div>
+                            </a>
+                        </li>	
+                        <li class="swiper-slide">
+                            <a href="">                      
+                                <div class="img_wrap">
+                                    <div class="thum_img" style="background-image:url(https://co1137-res.shiningcorp.com/data/editor/2407/thumb-736ccff3f71ced47e0106f2103e2c1a2_1721960900_9954_690x.jpg)"></div>
+                                </div>
+                            </a>
+                        </li>	 
+                        <li class="swiper-slide">
+                            <a href="">                      
+                                <div class="img_wrap">
+                                    <div class="thum_img" style="background-image:url(https://co1137-res.shiningcorp.com/data/editor/2407/thumb-736ccff3f71ced47e0106f2103e2c1a2_1721960900_9954_690x.jpg)"></div>
+                                </div>
+                            </a>
+                        </li>	               
+                    </ul>
+                </div>
+                <div class="pager_wrap">
+                    <div class="swiper-pagination"></div>
+                    <div class="more_box">
+                        view more 
+                        <a href="" class="more"><i data-feather="plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    
+</body>
+<script>
+
+        feather.replace(); 
+        var imgSwiper = new Swiper(".gall_slide .gall_list", {
+            speed:700,
+            slidesPerView:'1.5',
+            spaceBetween :10,
+            autoHeight:true,
+            // loop:true,
+            centeredSlides: true,
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            breakpoints:{
+                1025:{
+                    slidesPerView:'4',
+                    spaceBetween :40,
+                    centeredSlides: false,
+                },
+                769:{
+                    slidesPerView:'3',
+                    spaceBetween :20,
+                    centeredSlides: true,
+                },
+                481:{
+                    slidesPerView:'2',
+                    spaceBetween :15,
+                    centeredSlides: false,
+                },
+            },
+        });
+
+</script>
+</html>

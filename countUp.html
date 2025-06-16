@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./assets/js/lib/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/lib/jquery.waypoints.min.js"></script>
+    <script src="./assets/js/lib/jquery.countup.js"></script>
+    <style>
+        *{margin:0; padding: 0;}
+    </style>
+</head>
+<body>
+    
+
+
+    <div style="height: 2400px;">
+        <p style="height: 1600px;" style="background-color: #eee;"></p>
+        <p class="js-count-up" data-value="7205" style="padding: 20px; text-align: center; font-size: 50px; font-weight: 700;">7205</p>
+    </div>
+
+
+
+
+</body>
+<script>
+    $(function(){
+        $('.js-count-up').countUp({
+            //delay: 10,
+            time: 1500
+        });
+    })
+
+</script>
+</html>

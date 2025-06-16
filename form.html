@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="personal_info">
+        <div class="txt">
+            <p>
+                탄소중립 녹색성장 위원회는 의견 접수에 필요한 최소한의 개인정보를 수집하며, 이에 대한 동의를 얻고 있습니다. 아래의 내용을 자세히 읽어 보신 후 동의 여부를 결정하여 주시기 바랍니다.
+            </p>
+            <strong>개인정보 수집·이용 안내</strong>
+            <ul>
+                <li>항목 : 이름, 전화번호, 소속, 직책, 이메일</li>
+                <li>수집·이용 목적 : 의견 접수 및 처리</li>
+                <li>보유기간 : 게시일로부터 5년</li>
+            </ul>
+            <p>※ 위의 개인정보 수집·이용에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 등록에 제한을 받을 수 있습니다.</p>
+        </div><!-- //txt -->
+        <p class="radio_chk">
+            <span class="rd_box">
+                <input type="radio" id="agreeYes">
+                <label for="agreeYes">예, 동의합니다</label>
+            </span>
+            <span class="rd_box">
+                <input type="radio" id="agreeNo">
+                <label for="agreeNo">아니오, 동의하지 않습니다</label>
+            </span>
+        </p><!-- //radio_chk -->
+    </div><!-- //personal_box -->
+
+
+    <div class="form_wrap">
+
+        <form action="">
+            <fieldset>
+                <legend>기본정보</legend>
+
+                <div class="form_line">
+                    <label for="userName">성명</label>
+                    <p class="inp_box">
+                        <input type="text" id="userName">
+                    </p>
+                </div><!-- //form_line -->
+
+                <div class="form_line">
+                    <label for="userPhoneNo1">전화번호</label>
+                    <p class="inp_box">
+                        <input type="text" id="userPhoneNo1" name="userPhoneNo1" maxlength="3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" >
+                    </p>
+                    <em>-</em>
+                    <p class="inp_box">
+                        <input type="text" id="userPhoneNo2" name="userPhoneNo2" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" >
+                    </p>
+                    <em>-</em>
+                    <p class="inp_box">
+                        <input type="text" id="userPhoneNo3" name="userPhoneNo3" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" >
+                    </p>
+                </div><!-- //form_line -->
+
+                <div class="form_line">
+                    <label for="userAffiliation">소속</label>
+                    <p class="inp_box">
+                        <input type="text" id="userAffiliation">
+                    </p>
+                </div><!-- //form_line -->
+
+
+                <div class="form_line">
+                    <label for="userPosition">직책</label>
+                    <p class="inp_box">
+                        <input type="text" id="userPosition">
+                    </p>
+                </div><!-- //form_line -->
+
+
+                <div class="form_line">
+                    <label for="uesrEmail1">이메일</label>
+                    <p class="inp_box">
+                        <input type="text" id="uesrEmail1">
+                        <input type="text" id="uesrAddress">
+                        <em>@</em>
+                        <select name="" id="selAddress">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </p>
+                </div><!-- //form_line -->
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>의견등록</legend>
+
+
+                <div class="form_line">
+                    <label for="">제목</label>
+                    <p class="inp_box">
+                        <input type="text" id="">
+                    </p>
+                </div><!-- //form_line -->
+
+                <div class="form_line">
+                    <label for="">내용</label>
+                    <div>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                </div><!-- //form_line -->
+
+                <div class="form_line">
+                    <label for="">첨부</label>
+                    <p class="inp_box">
+                        <input type="text" id="">
+                    </p>
+                </div><!-- //form_line -->
+
+            </fieldset>
+
+
+
+        </form>
+    
+    </div><!-- //form_wrap -->
+    
+
+
+
+
+
+
+
+
+</body>
+</html>
