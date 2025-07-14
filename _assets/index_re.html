@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="./assets/css/lib/swiper.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="./assets/js/lib/jquery-3.7.1.min.js"></script>
+    <!-- <script src="./assets/js/lib/swiper.min.js"></script> -->
+    <!-- <script src="./assets/js/ui.js"></script> -->
+
+</head>
+<body>
+
+    <dl id="skip_nav">
+        <dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+        <dd>
+            <a href="#header"><em>주 메뉴 바로가기</em></a>
+        </dd>
+        <dd>
+            <a href="#main"><em>본문으로 바로가기</em></a>                        
+        </dd>
+        <dd>
+            <a href="#footer"><em>하단으로 바로가기</em></a>
+        </dd>
+    </dl><!-- //skip_nav -->
+
+    <header id="header">
+        <div class="inner">
+
+            <div class="hd_box">
+                <h1 class="logo"><a href="#"><span class="hidden_txt">logo1</span></a></h1>
+                <nav id="nav" class="">
+                    <ul class="nav_list" id="menu">
+                        <li class="nav_item" class="active" data-menuanchor="1stPage">
+                            <a href="#1stPage" class="nav_link">2035 NDC(안)</a>
+                        </li>
+                        <li class="nav_item" data-menuanchor="2cdPage">
+                            <a href="#2cdPage" class="nav_link">의견조회</a>
+                        </li>
+                        <li class="nav_item" data-menuanchor="3rdPage">
+                            <a href="#3rdPage" class="nav_link">의견등록</a>
+                        </li>
+                        <li class="nav_item" data-menuanchor="4thpage">
+                            <a href="#4thpage" class="nav_link">자료실</a>
+                        </li>
+                    </ul><!--//nav_list -->
+                </nav>
+                <h2 class="logo"><a href="#"><span class="hidden_txt">logo2</span></a></h2>
+            </div>
+            
+            <!-- s : mo nav -->
+            <button class="only_mo btn_hamburger">
+                <span></span>
+                <span></span>
+            </button>
+            <!--
+            <div>
+                <h1><a href="#">logo1</a></h1>
+
+                <button type="button"></button>
+            </div>
+            -->
+            <!-- e : mo nav -->
+
+        </div><!-- //inner -->
+    </header>
+
+ 
+    <main id="main">
+
+        <section style="margin: 800px 0 500px;">
+            <div class="inner">
+
+                <div class="graph_wrap">
+                    <div class="graph_box">
+                        <p class="line line01 hover"></p>
+                        <!-- <p class="line line02"></p>
+                        <p class="square square01"></p>
+                        <p class="square square02"></p>
+                        <p class="square square03"></p>
+                        <p class="line line03"></p> -->
+                    </div><!-- //graph_box-->
+
+                    <div class="graph_txt_box">
+                        <dl class="txt txt01">
+                            <dt>나는 헌법을 준수하고 국가를 보위</dt>
+                            <dd>
+                                <p>조국의 평화적 통일</p>
+                                <p>국민의 자유와 복리의 증진 및 민족문화의 창달</p>
+                            </dd>
+                        </dl>
+                        <!-- <dl class="txt txt02">
+                            <dt>나는 헌법을 준수하고 국가를 보위</dt>
+                            <dd>
+                                <p>조국의 평화적 통일</p>
+                                <p>국민의 자유와 복리의 증진 및 민족문화의 창달</p>
+                            </dd>
+                        </dl>
+                        <dl class="txt txt03">
+                            <dt>나는 헌법을 준수하고 국가를 보위</dt>
+                            <dd>
+                                <p>조국의 평화적 통일</p>
+                                <p>국민의 자유와 복리의 증진 및 민족문화의 창달</p>
+                            </dd>
+                        </dl>
+                        <dl class="txt txt04">
+                            <dt>나는 헌법을 준수하고 국가를 보위</dt>
+                        </dl>
+                        <dl class="txt txt05">
+                            <dt>나는 헌법을 준수하고 국가를 보위</dt>
+                            <dd>
+                                <p>조국의 평화적 통일</p>
+                            </dd>
+                        </dl>
+                        <dl class="txt txt06">
+                            <dt>나는 헌법을 준수하고 국가를 보위</dt>
+                            <dd>
+                                <p>조국의 평화적 통일</p>
+                            </dd>
+                        </dl> -->
+                    </div><!-- graph_txt_box -->
+                </div><!-- //graph_wrap -->
+
+
+                <script>
+                    // $(".txt01").on("mouseover", function(){
+                    //     $(".line01").toggleClass("hover");
+                    // });
+
+                    $('.txt01').hover(function(e){
+                        $('.line01').addClass('hover');
+                    },function(e){
+                        $('.line01').removeClass('hover');
+                    });
+                </script>
+
+            </div>
+        </section>
+    <!--
+        <section>
+            <div class="inner">
+                <h3>섹션 1</h3>
+            </div>
+        </section>
+
+        <section>
+            <div class="inner">
+                <h3>섹션 2</h3>
+            </div>
+        </section>
+
+        <section>
+            <div class="inner">
+                <h3>섹션 3</h3>
+            </div>
+        </section>
+        <section>
+            <div class="inner">
+                <h3>섹션 4</h3>
+            </div>
+        </section>
+    -->
+
+    </main><!-- //main -->
+
+    <footer id="footer">
+        <div class="inner">
+            <!--  -->
+            <h2><a href="#"><span class="hidden_txt">footer logo</span></a></a></h2>
+            <!-- 
+            <div class="footer_info">
+                <p class="address">(우 30121) 세종특별자치시 가름로 180 세종파이낸스센터3차 3층</p>
+                <p class="copyright">COPYRIGHT &#169; 2021 BY 2050탄소중립녹색성장위원회 ALL RIGHTS RESERVED.</p>
+            </div>
+            -->
+        </div><!-- //inner -->
+    </footer><!-- //footer -->
+
+
+
+
+
+
+</body>
+</html>

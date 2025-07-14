@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탄소중립</title>
+
+    <!-- 기본 메타 정보 -->
+    <meta name="description" content=".">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+
+    <!-- Open Graph (Facebook & SNS 공유) -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+
+    <!-- Twitter Card (트위터 공유) -->
+    <meta name="twitter:card" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+
+
+    <script src="./assets/js/lib/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/lib/jquery-ui.min.js"></script>
+    <script src="./assets/js/ui.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+    <dl id="skip_nav" class="only_pc">
+        <dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+        <dd>
+            <a href="#header"><em>주 메뉴 바로가기</em></a>
+        </dd>
+        <dd>
+            <a href="#wrapper"><em>본문으로 바로가기</em></a><!-- sub 페이지들은 #wrapper-->                 
+        </dd>
+        <dd>
+            <a href="#footer"><em>하단으로 바로가기</em></a>
+        </dd>
+    </dl><!-- //skip_nav -->
+
+    <header id="header">
+        <div class="inner">
+
+            <button class="only_mo btn_hamburger">
+                <span></span>
+                <span></span>
+            </button>
+
+            <h1 class="logo logo1"><a href="#" ><span class="hidden_txt">탄소중립</span></a></h1>
+            
+            <nav id="nav">
+                <div class="only_mo mo_user">
+                    <p class="info"><strong>홍길동</strong>님, 안녕하세요</p>
+                    <ul>
+                        <li><a href="#">나의 의견보기</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                    
+                </div>
+                <ul class="nav_list">
+                    <li>
+                        <a href="./ndc.html">2035 NDC(안)</a>
+                    </li>
+                    <li>
+                        <a href="./opinions.html">의견조회</a>
+                    </li>
+                    <li>
+                        <a href="./register01.html">의견등록</a>
+                    </li>
+                    <li class="active">
+                        <a href="./resource.html">자료실</a>
+                    </li>
+                </ul><!--//nav_list -->
+            </nav>
+
+            <h2 class="logo slogan"><a href="#"><span class="hidden_txt">2023 국가 온실가스 감축 목표(NDC) 여러분의 의견을 듣고 있어요!</span></a></h2>
+        
+        </div><!-- //inner -->
+    </header>
+
+    <div id="wrapper" class="wrapper">
+        
+        <div class="top_conts_wrap">
+            <div class="inner">
+                <h3>자료실</h3>
+                <h4>2035 온실가스 감축 목표, 자세한 내용을 다운로드하여 확인하세요</h4>
+            </div><!-- //inner -->
+        </div><!-- //top_conts_wrap -->
+
+        <div class="conts_wrap op_reg"><!-- 의견등록 페이지 일 경우 클래스명 op_reg 추가-->
+            <div class="inner">
+
+                <div class="register_section">
+                    <img src="./assets/imgs/ico_pdf.webp" alt="휴대폰 인증하기" class="img_reg pdf">
+                    <a href="#" class="btn_reg">PDF 다운로드</a>
+                </div><!-- //register_section -->
+
+            </div><!-- //inner -->
+        </div><!-- //conts_wrap -->
+
+
+    </div><!-- //wrapper -->
+
+
+    <footer id="footer">
+        <div class="inner">
+
+            <div class="flex_box">
+                <h2><a href="#"><img src="./assets/imgs/logo_ft.webp" alt="대통력직속2050 탄소중립 녹색성장 위원회"></a></h2>
+                <div class="footer_info">
+                    <p class="address">(우 30121) 세종특별자치시 가름로 180 세종파이낸스센터3차 3층</p>
+                    <p class="copyright">COPYRIGHT &#169; 2021 BY 2050탄소중립녹색성장위원회 ALL RIGHTS RESERVED.</p>
+                </div><!-- //footer_info -->
+                <p class="refer_info">2035 NDC 의견수렴 웹사이트는 ECO 코드 및 친환경 UI/UX를 접목한 에너지소비효율이 높은 웹사이트입니다 </p>
+            </div><!-- //flex_box -->
+
+        </div><!-- //inner -->
+    </footer><!-- //footer -->
+
+
+
+
+
+
+</body>
+</html>

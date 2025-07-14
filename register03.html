@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탄소중립</title>
+
+    <!-- 기본 메타 정보 -->
+    <meta name="description" content=".">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+
+    <!-- Open Graph (Facebook & SNS 공유) -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+
+    <!-- Twitter Card (트위터 공유) -->
+    <meta name="twitter:card" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+
+
+    <script src="./assets/js/lib/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/lib/jquery-ui.min.js"></script>
+    <script src="./assets/js/ui.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+    <dl id="skip_nav" class="only_pc">
+        <dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+        <dd>
+            <a href="#header"><em>주 메뉴 바로가기</em></a>
+        </dd>
+        <dd>
+            <a href="#wrapper"><em>본문으로 바로가기</em></a><!-- sub 페이지들은 #wrapper-->                 
+        </dd>
+        <dd>
+            <a href="#footer"><em>하단으로 바로가기</em></a>
+        </dd>
+    </dl><!-- //skip_nav -->
+
+    <header id="header">
+        <div class="inner">
+
+            <button class="only_mo btn_hamburger">
+                <span></span>
+                <span></span>
+            </button>
+
+            <h1 class="logo logo1"><a href="#" ><span class="hidden_txt">탄소중립</span></a></h1>
+            
+
+            <div class="user_box">
+                <strong>홍길동</strong>
+                <span>님, 안녕하세요</span>
+                <img src="./assets/imgs/ico_setting.webp" alt="개인설정">
+                <div class="user_menu">
+                    <ul>
+                        <li><a href="#">나의 의견보기</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                </div><!-- //user_menu -->
+            </div><!-- //user_box -->
+
+            <nav id="nav">
+                <div class="only_mo mo_user">
+                    <p class="info"><strong>홍길동</strong>님, 안녕하세요</p>
+                    <ul>
+                        <li><a href="#">나의 의견보기</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                    
+                </div>
+                <ul class="nav_list">
+                    <li>
+                        <a href="./ndc.html">2035 NDC(안)</a>
+                    </li>
+                    <li>
+                        <a href="./opinions.html">의견조회</a>
+                    </li>
+                    <li class="active">
+                        <a href="./register01.html">의견등록</a>
+                    </li>
+                    <li>
+                        <a href="./resource.html">자료실</a>
+                    </li>
+                </ul><!--//nav_list -->
+            </nav>
+
+            <h2 class="logo slogan"><a href="#"><span class="hidden_txt">2023 국가 온실가스 감축 목표(NDC) 여러분의 의견을 듣고 있어요!</span></a></h2>
+        
+        </div><!-- //inner -->
+    </header>
+
+    <div id="wrapper" class="wrapper">
+        
+        <div class="top_conts_wrap">
+            <div class="inner">
+                <h3>의견 등록</h3>
+                <h4>2035 온실가스 감축 목표 상향에 대한 여러분의 의견을 등록해주세요</h4>
+            </div><!-- //inner -->
+        </div><!-- //top_conts_wrap -->
+
+        <div class="conts_wrap op_reg"><!-- 의견등록 페이지 일 경우 클래스명 op_reg 추가-->
+            <div class="inner">
+
+                <div class="register_section info02">
+
+
+                    <div class="form_box">
+
+                        <fieldset class="form_box_inner">
+                            <div class="form_line">
+                                <label class="form_tit ndc">
+                                    NDC 부문<img src="./assets/imgs/ico_tip.webp" alt="ndc 부문 툴팁">
+                                </label>
+                                <p class="sel_box">
+                                    <select name="" id="">
+                                        <option value="">전환</option>
+                                        <option value="">산업</option>
+                                        <option value="">건물</option>
+                                        <option value="">수송</option>
+                                        <option value="">농축수산</option>
+                                        <option value="">폐기물</option>
+                                        <option value="">수소</option>
+                                        <option value="">흡수원</option>
+                                        <option value="">CCUS</option>
+                                        <option value="">국외감축</option>
+                                    </select>
+                                </p><!-- //sel_box -->
+
+                                <!-- start :  툴팁-->
+                                <div class="ndc_tooltip_box">
+                                    <div class="tooltip_inner">
+                                        <p class="tit">부분별 감축정책</p>
+                                        <ul>
+                                            <li>
+                                                <strong>전환</strong>
+                                                <p class="txt">석탄에너지 축소,<br>원전ㆍ재생(해상/풍력 등) 에너지 확대</p>
+                                            </li>
+                                            <li>
+                                                <strong>산업</strong>
+                                                <p class="txt">핵심기술 확보, 배출권 제도 개선</p>
+                                            </li>
+                                            <li>
+                                                <strong>수송</strong>
+                                                <p class="txt">무공해차 보급, 운송 인프라 저탄소화</p>
+                                            </li>
+                                            <li>
+                                                <strong>건물</strong>
+                                                <p class="txt">제로에너지 건축물 확대, 그린리모델링</p>
+                                            </li>
+                                            <li>
+                                                <strong>농축수산</strong>
+                                                <p class="txt">농축수산 구조 저탄소화</p>
+                                            </li>
+                                            <li>
+                                                <strong>폐기물</strong>
+                                                <p class="txt">지속가능생산/소비, 자원순환 확대</p>
+                                            </li>
+                                            <li>
+                                                <strong>수소</strong>
+                                                <p class="txt">청정수소 확대, 수소활용 생태계 강화</p>
+                                            </li>
+                                            <li>
+                                                <strong>흡수원</strong>
+                                                <p class="txt">산림순환, 습지복원/보호</p>
+                                            </li>
+                                            <li>
+                                                <strong>CCUS</strong>
+                                                <p class="txt">제도인프라 마련, 상용화 R&D</p>
+                                            </li>
+                                            <li>
+                                                <strong>국제감축</strong>
+                                                <p class="txt">지원 플랫폼, 사업발굴 등</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- //tooltip_inner -->
+                                </div><!-- //ndc_tooltip_box -->
+                                <!-- end :  툴팁-->
+                            </div><!-- //form_line -->
+
+                            
+                            <div class="form_line op_field">
+                                <strong class="form_tit">의견분야</strong>
+                                <div class="chk_box">
+                                    <span class="chk">
+                                        <input type="checkbox" id="policy" value="">
+                                        <label for="policy"><span>정책제언</span></label>
+                                    </span>
+                                    <span class="chk">
+                                        <input type="checkbox" id="reduce" value="">
+                                        <label for="reduce"><span>감축수단</span></label>
+                                    </span>
+                                    <span class="chk">
+                                        <input type="checkbox" id="etc" value="">
+                                        <label for="etc"><span>기타</span></label>
+                                    </span>
+                                </div>
+                            </div><!-- //form_line -->
+                            
+
+                            <div class="form_line">
+                                <label for="title" class="form_tit">제목</label>
+                                <div class="inp_box">
+                                    <p class="inp_outer">
+                                        <input type="text" id="title" placeholder="30자 이내로 작성해주세요">
+                                    </p><!-- //inp_outer -->
+                                </div><!-- //inp_box -->
+                            </div><!-- //form_line -->
+
+                            
+                            <div class="form_line">
+                                <label for="" class="form_tit">내용</label>
+                                <div class="txt_box">
+                                    <textarea name="" id="" placeholder="2,000자 이내로 작성해주세요"></textarea>
+                                    <p class="txt_num">
+                                        <em>0</em>
+                                        <span>/ 2,000</span>
+                                    </p><!-- //txt_num -->
+                                </div><!-- //txt_box -->
+                            </div><!-- //form_line -->
+
+                            <div class="form_line">
+                                <label for="file" class="form_tit">파일첨부</label>
+                                <div class="inp_box">
+                                    <p class="inp_outer file_box">
+                                        <input type="text" class="upload_name" placeholder="업로드 파일 형식 PDF, hwp, doc, 파일 용량 5M 이내입니다" disabled="disabled">
+                                        <label for="ex_filename"></label> 
+                                        <input type="file" id="ex_filename" class="upload_hidden"> 
+                                    </p><!-- //inp_outer -->
+                                    <p class="file_name_box">
+                                        <strong>
+                                            <span>자연보호푸르게푸르게11.pdf</span>
+                                            <img src="./assets/imgs/ico_file_del.webp" alt="파일삭제">
+                                        </strong>
+                                        <strong>
+                                            <span>자연보호푸르게푸르게22.pdf</span>
+                                            <img src="./assets/imgs/ico_file_del.webp" alt="파일삭제">
+                                        </strong>
+                                        <strong>
+                                            <span>333.pdf</span>
+                                            <img src="./assets/imgs/ico_file_del.webp" alt="파일삭제">
+                                        </strong>
+                                    </p><!-- //file_name_box -->
+                                </div><!-- //file_box -->
+                                
+        
+                            </div><!-- //form_line -->
+
+                            <div class="btn_form_box">
+                                <button type="button" class="btn btn_prev">이전</button>
+                                <button type="button" class="btn btn_end">등록완료</button>
+                            </div><!-- //btn_form_box -->
+
+
+                            <!-- start : 등록완료 클릭 후 팝업 -->
+                            <div class="popup_wrap">
+                                <div class="popup_inner">
+                                    <div class="popup_conts">
+                                        <dl>
+                                            <dt>의견이 등록되었습니다.</dt>
+                                            <dd>2035 NDC에 대한 의견을 주셔서 감사합니다. <br>
+                                                등록하신 의견은 아래와 같은 과정으로 처리가 됩니다.</dd>
+                                        </dl>
+                                        <ul>
+                                            <li>
+                                                <p>의견등록</p></li>
+                                            <li>
+                                                <p>
+                                                    이후의<br>
+                                                    단계를 받아<br>
+                                                    진행
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    이후의<br>
+                                                    단계를 받아<br>
+                                                    진행
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    이후의<br>
+                                                    단계를 받아<br>
+                                                    진행
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="btn_popup_close">확인</button>
+                                    </div><!-- //popup_conts -->
+                                
+                                </div><!-- //popup_inner -->
+                            </div><!-- //popup_wrap -->
+
+                        </fieldset>
+                    </div><!-- //form_box -->
+                    
+                </div><!-- //register_section-->
+
+            </div><!-- //inner -->
+        </div><!-- //conts_wrap -->
+
+
+    </div><!-- //wrapper -->
+
+
+    <footer id="footer">
+        <div class="inner">
+
+            <div class="flex_box">
+                <h2><a href="#"><img src="./assets/imgs/logo_ft.webp" alt="대통력직속2050 탄소중립 녹색성장 위원회"></a></h2>
+                <div class="footer_info">
+                    <p class="address">(우 30121) 세종특별자치시 가름로 180 세종파이낸스센터3차 3층</p>
+                    <p class="copyright">COPYRIGHT &#169; 2021 BY 2050탄소중립녹색성장위원회 ALL RIGHTS RESERVED.</p>
+                </div><!-- //footer_info -->
+                <p class="refer_info">2035 NDC 의견수렴 웹사이트는 ECO 코드 및 친환경 UI/UX를 접목한 에너지소비효율이 높은 웹사이트입니다 </p>
+            </div><!-- //flex_box -->
+
+        </div><!-- //inner -->
+    </footer><!-- //footer -->
+
+
+
+
+
+
+</body>
+</html>

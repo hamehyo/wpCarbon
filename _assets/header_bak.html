@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="./assets/css/lib/swiper.min.css">
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+
+    <script src="./assets/js/lib/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/lib/swiper.min.js"></script>
+    <script src="./assets/js/ui.js"></script>
+
+
+    <style>
+        html, body, h1, h2, h3, h4, h5, h6, div, p, 
+        blockquote, pre, code, address, ul, ol, li, 
+        menu, nav, section, article, aside, dl, dt, dd, 
+        table, thead, tbody, tfoot, label, caption, th, td, 
+        form, fieldset, legend, hr, input, button, textarea, 
+        object, figure, figcaption {
+            margin:0;
+            padding:0;
+            font-family: "Pretendard Variable";
+        }
+        main, header, section, nav, footer, aside, article, figure {
+            display:block;
+        }
+        html{
+            -webkit-touch-callout:none;
+            -webkit-user-select:none;
+            -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+        }
+        button:focus, input:focus, textarea:focus, select:focus {
+            outline:none;
+            -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+        }
+        ul, ol, li {
+            list-style:none;
+        }
+        h1, h2, h3, h4, strong, th {
+            font-weight:normal;
+            font-family:inherit;
+            color:inherit;
+        }
+        a {
+            color:inherit;
+            text-decoration:none;
+            outline:none;
+        }
+        i, em {
+            font-style: normal;
+        }
+        body {
+            margin: 0;
+            font-family: Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        a {
+            color: #000;
+        }
+
+        /* header */
+        #header {
+            background-color: #fff;
+            box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+            position: fixed;
+            width: 100%;
+            z-index: 3;
+        }
+        #header ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        #header li a {
+            display: block;
+            padding: 20px 20px;
+            border-right: 1px solid #f4f4f4;
+            text-decoration: none;
+        }
+        #header li a:hover,
+        #header .menu_btn:hover {
+            background-color: #f4f4f4;
+        }
+        #header .logo {
+            display: block;
+            float: left;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        #header .logo.right{
+            float: right;
+        }
+
+
+        /* menu */
+        #header .menu {
+            clear: both;
+            max-height: 0;
+            transition: max-height .2s ease-out;
+        }
+
+        /* menu icon */
+        #header .menu_icon {
+            cursor: pointer;
+            /* display: inline-block; */
+            float: right;
+            padding: 28px 20px;
+            position: relative;
+            user-select: none;
+        }
+        #header .menu_icon .navicon {
+            background: #333;
+            display: block;
+            height: 2px;
+            position: relative;
+            transition: background .2s ease-out;
+            width: 18px;
+        }
+        #header .menu_icon .navicon:before,
+        #header .menu_icon .navicon:after {
+            background: #333;
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+        #header .menu_icon .navicon:before {
+            top: 5px;
+        }
+        #header .menu_icon .navicon:after {
+            top: -5px;
+        }
+        /* menu btn */
+        #header .menu_btn {
+            display: none;
+        }
+        #header .menu_btn:checked ~ .menu {
+            max-height: 240px;
+        }
+        #header .menu_btn:checked ~ .menu_icon .navicon {
+            background: transparent;
+        }
+        #header .menu_btn:checked ~ .menu_icon .navicon:before {
+            transform: rotate(-45deg);
+        }
+        #header .menu_btn:checked ~ .menu_icon .navicon:after {
+            transform: rotate(45deg);
+        }
+        #header .menu_btn:checked ~ .menu_icon:not(.steps) .navicon:before,
+        #header .menu_btn:checked ~ .menu_icon:not(.steps) .navicon:after {
+            top: 0;
+        }
+
+
+
+        /* 48em = 768px */
+
+        @media (min-width: 48em) {
+            #header li {
+                float: left;
+            }
+            #header li a {
+                padding: 20px 30px;
+            }
+            #header .menu {
+                clear: none;
+                float: right;
+                max-height: none;
+            }
+            #header .menu_icon {
+                display: none;
+            }
+            
+        }
+        @media only screen and (max-width: 768px) {
+            
+
+        }
+        
+    </style>
+</head>
+<body>
+
+
+
+
+<header id="header">
+    <div class="inner">
+
+        <h1 class="logo"><a href="#">logo1</a></h1>
+        <h2 class="logo right"><a href="#">logo2</a></h2>
+
+        <div class="menu_wrap">
+            <input class="menu_btn" type="checkbox" id="menu_btn" />
+            <label class="menu_icon" for="menu_btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="#work">Our Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+    </div><!-- //inner-->
+</header>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

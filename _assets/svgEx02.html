@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="./assets/css/lib/swiper.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- <script src="./assets/js/lib/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/lib/swiper.min.js"></script> -->
+    <script src="./assets/js/lib/gsap.min.js"></script>
+    <script src="./assets/js/lib/ScrollTrigger.min.js"></script>
+    <!-- <script src="./assets/js/ui.js"></script> -->
+
+    <style>
+        /* @import url('https://cdn.jsdelivr.net/gh/orioncactus/Pretendard/dist/web/static/Pretendard-dynamic-subset.css');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Play:wght@400;700&display=swap'); */
+
+        body,html {height:100%;margin:0;padding:0}
+        ul, li, dl, dt, dd, p, span, h3{margin:0;padding:0}
+        a{text-decoration:none}
+        li{list-style:none}
+        *, :after, :before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+        :root{--primary:#eb0033;--black:#27232d;--k-font:'Pretendard';--e-font:'Play'}
+
+        #inc01{overflow:hidden;width:100%;padding:200px 0;background:#000}
+        #inc01 .cont_wrap{width:100%;}
+        #inc01 .cont_wrap ul{position:relative;display:flex;justify-content:center;align-items:center;width:100%}
+        #inc01 .cont_wrap ul:after{content:"";position:absolute;top:50%;left:-40%;transform:translateY(-50%);width:calc(100% / 3);height:2px;background-color:#fff}
+        #inc01 .cont_wrap ul:before{content:"";opacity:0;position:absolute;top:50%;right:25%;transform:translateY(-50%);width:calc(100% / 3);height:2px;background-color:#fff}
+        #inc01 .cont_wrap.on ul:after{animation:bar_left_ani 0.9s ease-in forwards}
+        #inc01 .cont_wrap.on ul:before{animation:bar_right_ani 0.9s ease-in forwards;animation-delay:1.2s}
+        #inc01 .cont_wrap ul li{position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;width:450px;height:450px;padding:0 50px;border-radius:50%;background-color:#000}
+        #inc01 .cont_wrap ul li:first-child{z-index:1;right:-50px}
+        #inc01 .cont_wrap ul li:nth-child(2){z-index:2}
+        #inc01 .cont_wrap ul li:last-child{z-index:3;left:-50px}
+        #inc01 .cont_wrap ul li h3{font-size:30px;font-weight:700;font-family:var(--e-font);text-align:center;color:#fff}
+        #inc01 .cont_wrap ul li p{margin-top:40px;font-size:20px;font-weight:700;text-align:center;color:rgb(255, 255, 255, 0.6)}
+        #inc01 .cont_wrap ul li svg{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:455px;height:450px}
+        #inc01 .cont_wrap ul li svg path {stroke-width:1.2;fill:none;stroke-dasharray:610px;stroke-dashoffset:610px;stroke:#fff}
+        #inc01 .cont_wrap.on ul li svg path {animation:stroke_ani 0.9s ease-in forwards}
+        #inc01 .cont_wrap ul li:nth-child(1) svg path{animation-delay:0.5s}
+        #inc01 .cont_wrap ul li:nth-child(2) svg path{animation-delay:0.75s}
+        #inc01 .cont_wrap ul li:nth-child(3) svg path{animation-delay:1s}
+
+        @keyframes stroke_ani {0% {stroke-dashoffset:610px}100% {stroke-dashoffset:0}}
+        @keyframes bar_left_ani{0%{left:-40%} 100%{left:-10%}}
+        @keyframes bar_right_ani{0%{right:25%;opacity:0;} 100%{right:-10%;opacity:1}}
+
+        @media(max-width:1380px){
+            #inc01 .cont_wrap ul li{width:300px;height:300px}
+            #inc01 .cont_wrap ul li svg{width:100%;height:100%}
+            #inc01 .cont_wrap ul li h3{margin-bottom:10px;font-size:20px}  
+            #inc01 .cont_wrap ul li p{margin:0;font-size:14px;font-weight:600}
+        }
+        @media(max-width:768px){
+            #inc01 .cont_wrap ul li{width:200px;height:200px}  
+            #inc01 .cont_wrap ul li h3{font-size:16px}   
+        }
+    </style>
+</head>
+<body>
+    <!-- https://codepen.io/designkits/pen/ExqGGqN -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script> -->
+
+    <article id="inc01">
+        <div style="height: 1000px;"></div>
+        <div class="cont_wrap">
+            <ul>
+                <li>
+                    <svg viewBox="0 0 194 194" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.5 97C0.5 43.7942 43.7942 0.5 97 0.5C150.214 0.5 193.5 43.7942 193.5 97C193.5 150.214 150.214 193.5 97 193.5C43.7942 193.5 0.5 150.214 0.5 97Z" stroke="white" stroke-width="1"></path>
+                    </svg>
+                    <h3 class="pl">Customer-centric strategy</h3>
+                    <p>혁신적 연구 및 개발</p>
+                </li>
+                <li>
+                    <svg viewBox="0 0 194 194" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.5 97C0.5 43.7942 43.7942 0.5 97 0.5C150.214 0.5 193.5 43.7942 193.5 97C193.5 150.214 150.214 193.5 97 193.5C43.7942 193.5 0.5 150.214 0.5 97Z" stroke="white" stroke-width="1"></path>
+                    </svg>
+                    <h3 class="pl">Data-driven decision making</h3>
+                    <p>신뢰성과 투명성</p>
+                </li>
+                <li>
+                    <svg viewBox="0 0 194 194" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.5 97C0.5 43.7942 43.7942 0.5 97 0.5C150.214 0.5 193.5 43.7942 193.5 97C193.5 150.214 150.214 193.5 97 193.5C43.7942 193.5 0.5 150.214 0.5 97Z" stroke="white" stroke-width="1"></path>
+                    </svg>
+                    <h3 class="pl">Building Sustainable Brand Value</h3>
+                    <p>지속 가능한 발전</p>
+                </li>
+            </ul>
+        </div>
+        <div style="height: 1000px;"></div>
+    </article>
+
+
+</body>
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to("#inc01 .cont_wrap", {
+        scrollTrigger: {
+            trigger: "#inc01 .cont_wrap",
+            start: "top 80%",
+            end: "top 20%",
+            scrub: true,
+        },
+        onStart: function() {
+            // 애니메이션 시작 전에 클래스 추가
+            document.querySelector("#inc01 .cont_wrap").classList.add("on");
+        }
+});
+</script>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탄소중립</title>
+
+    <!-- 기본 메타 정보 -->
+    <meta name="description" content=".">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+
+    <!-- Open Graph (Facebook & SNS 공유) -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+
+    <!-- Twitter Card (트위터 공유) -->
+    <meta name="twitter:card" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+
+
+    <script src="./assets/js/lib/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/lib/jquery-ui.min.js"></script>
+    <script src="./assets/js/ui.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <dl id="skip_nav" class="only_pc">
+        <dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+        <dd>
+            <a href="#header"><em>주 메뉴 바로가기</em></a>
+        </dd>
+        <dd>
+            <a href="#wrapper"><em>본문으로 바로가기</em></a><!-- sub 페이지들은 #wrapper-->
+        </dd>
+        <dd>
+            <a href="#footer"><em>하단으로 바로가기</em></a>
+        </dd>
+    </dl><!-- //skip_nav -->
+
+    <header id="header">
+        <div class="inner">
+
+            <button class="only_mo btn_hamburger">
+                <span></span>
+                <span></span>
+            </button>
+
+            <h1 class="logo logo1"><a href="#" ><span class="hidden_txt">탄소중립</span></a></h1>
+
+            <nav id="nav">
+                <div class="only_mo mo_user">
+                    <p class="info"><strong>홍길동</strong>님, 안녕하세요</p>
+                    <ul>
+                        <li><a href="#">나의 의견보기</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                    
+                </div>
+                <ul class="nav_list">
+                    <li>
+                        <a href="./ndc.html">2035 NDC(안)</a>
+                    </li>
+                    <li class="active">
+                        <a href="./opinions.html">의견조회</a>
+                    </li>
+                    <li>
+                        <a href="./register01.html">의견등록</a>
+                    </li>
+                    <li>
+                        <a href="./resource.html">자료실</a>
+                    </li>
+                </ul><!--//nav_list -->
+            </nav>
+
+            <h2 class="logo slogan"><a href="#"><span class="hidden_txt">2023 국가 온실가스 감축 목표(NDC) 여러분의 의견을 듣고 있어요!</span></a></h2>
+
+        </div><!-- //inner -->
+    </header>
+
+    <div id="wrapper" class="wrapper">
+
+        <div class="top_conts_wrap">
+            <div class="inner">
+                <h3>의견조회</h3>
+                <h4>2035년 국가 온실가스 감축 목표 NDC 여러분과 함께 소통하며 만들어가겠습니다</h4>
+            </div><!-- //inner -->
+        </div><!-- //top_conts_wrap -->
+
+        <div class="conts_wrap op_view"><!-- 의견조회 상세페이지 일 경우 클래스명 op_view 추가-->
+            <div class="inner">
+
+                <div class="op_section">
+                    <div class="op_view_box">
+                        <div class="top">
+                            <p>
+                                <strong class="type">NDC 부문</strong>
+                                <span>산업</span>
+                            </p>
+                            <p>
+                                <strong class="type">의견분야</strong>
+                                <span class="type">감축수단</span>
+                            </p>
+                            <p>
+                                <strong>제목</strong>
+                                <span class="tit">디지털 산업 탄소배출 감축을 위한 SW 탄소배출량 측정 플랫폼</span>
+                            </p>
+                            <a href="#" class="btn_share">
+                                <img src="./assets/imgs/ico_share.webp" alt="공유"> 
+                            </a>
+                        </div><!-- //top-->
+                        <div class="txt">
+                            디지털 산업의 급속한 확산은 우리 삶의 편리함을 높였지만, 동시에 막대한 에너지 소비와 탄소배출을 동반하고 있습니다. 특히 소프트웨어(SW) 분야는 물리적 제품과
+                            달리 탄소배출이 ‘비가시적’이라는 이유로 그 심각성이 간과되어 왔습니다. 하지만 최근 클라우드 기반의 서비스 확대, 인공지능 모델의 대규모 학습, 스트리밍 및
+                            웹서비스 이용 증가 등으로 인해 디지털 환경에서의 전력 소비와 탄소배출량은 가파르게 증가하고 있으며, 이는 더 이상 외면할 수 없는 현실입니다. 
+                            <br><br>
+                            이러한 상황에서 SW
+                            탄소배출량을 정량적으로 측정하고 분석할 수 있는 플랫폼의 필요성이 커지고 있습니다. 탄소배출은 측정이 가능해야 관리와 감축이 가능하며, 특히 소프트웨어는 그 운영
+                            방식, 설계 구조, 배포 환경 등에 따라 탄소배출 수준이 크게 달라질 수 있습니다. 예를 들어, 동일한 기능을 수행하더라도 비효율적인 코드나 무거운 프론트엔드 구조,
+                            과도한 API 호출은 에너지 사용량을 높이고, 이는 곧 더 많은 탄소배출로 이어집니다. 이러한 지점을 정밀하게 진단할 수 있는 측정 플랫폼은 친환경적인 SW 개발과
+                            운영을 유도하는 핵심 수단이 될 수 있습니다. 
+                            <br><br>
+                            플랫폼은 코드 단위부터 시스템 전체에 이르기까지 다양한 수준의 분석을 제공하고, 서비스별‧기술별‧운영환경별 탄소배출
+                            비교가 가능해야 합니다. 나아가 소프트웨어 개발자와 기업이 자율적으로 탄소발자국을 모니터링하고 최적화할 수 있는 도구로 기능해야 하며, 나아가 탄소감축 가이드라인과
+                            베스트프랙티스를 함께 제공함으로써 지속가능한 디지털 생태계를 구축하는 데 기여해야 합니다. 또한, 이러한 플랫폼은 기업의 ESG 경영 대응 수단으로도 주목받을 수
+                            있습니다. 특히 향후 디지털 부문에서도 탄소배출 공개 및 감축 목표 수립이 의무화될 가능성이 높아지고 있는 가운데, SW 탄소배출량 측정 시스템은 신뢰할 수 있는
+                            데이터를 기반으로 기업의 정보공개 및 감축 전략 수립을 지원할 수 있습니다. 이는 단순한 환경적 효과를 넘어서, 기업의 대외 신뢰도 제고 및 경쟁력 확보로 이어질 수
+                            있습니다. 결론적으로, SW 탄소배출량 측정 플랫폼은 디지털 시대의 지속가능성을 실현하기 위한 핵심 인프라이며, 기술 혁신과 기후 대응이 조화를 이루는 새로운 산업
+                            표준으로 자리잡을 수 있을 것입니다.
+                        </div><!-- //txt-->
+                        <p class="info">
+                            <span class="date">2025-07-02</span>
+                            <span class="name">홍*동</span>
+                        </p><!-- //info-->
+                        <div class="attachedfile">
+                            <strong>첨부파일</strong>
+                            <ul>
+                                <li><span>SW 탄소배출 저감 가이드라인.pdf</span></li>
+                                <li><span>SW 탄소배출 저감 가이드라인.pdf</span></li>
+                            </ul>
+                        </div><!-- //attachedfile-->
+                    </div><!-- //op_view_box-->
+
+                    <div class="btn_form_box">
+                        <button type="button" class="btn btn_list">목록보기</button>
+                        <button type="button" class="btn btn_op">의견등록</button>
+                    </div><!-- //btn_form_box -->
+
+
+                </div><!-- //op_section-->
+
+
+            </div><!-- //inner -->
+        </div><!-- //conts_wrap -->
+
+
+    </div><!-- //wrapper -->
+
+
+    <footer id="footer">
+        <div class="inner">
+
+            <div class="flex_box">
+                <h2><a href="#"><img src="./assets/imgs/logo_ft.webp" alt="대통력직속2050 탄소중립 녹색성장 위원회"></a></h2>
+                <div class="footer_info">
+                    <p class="address">(우 30121) 세종특별자치시 가름로 180 세종파이낸스센터3차 3층</p>
+                    <p class="copyright">COPYRIGHT &#169; 2021 BY 2050탄소중립녹색성장위원회 ALL RIGHTS RESERVED.</p>
+                </div><!-- //footer_info -->
+                <p class="refer_info">2035 NDC 의견수렴 웹사이트는 ECO 코드 및 친환경 UI/UX를 접목한 에너지소비효율이 높은 웹사이트입니다 </p>
+            </div><!-- //flex_box -->
+
+        </div><!-- //inner -->
+    </footer><!-- //footer -->
+
+
+
+
+
+
+</body>
+
+</html>

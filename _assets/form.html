@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./assets/js/lib/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+
+    <div class="personal_info">
+        <div class="txt">
+            <p>
+                탄소중립 녹색성장 위원회는 의견 접수에 필요한 최소한의 개인정보를 수집하며, 이에 대한 동의를 얻고 있습니다. 아래의 내용을 자세히 읽어 보신 후 동의 여부를 결정하여 주시기 바랍니다.
+            </p>
+            <strong>개인정보 수집·이용 안내</strong>
+            <ul>
+                <li>항목 : 이름, 전화번호, 소속, 직책, 이메일</li>
+                <li>수집·이용 목적 : 의견 접수 및 처리</li>
+                <li>보유기간 : 게시일로부터 5년</li>
+            </ul>
+            <p>※ 위의 개인정보 수집·이용에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 등록에 제한을 받을 수 있습니다.</p>
+        </div><!-- //txt -->
+        <p class="radio_chk">
+            <span class="rd_box">
+                <input type="radio" id="agreeYes">
+                <label for="agreeYes">예, 동의합니다</label>
+            </span>
+            <span class="rd_box">
+                <input type="radio" id="agreeNo">
+                <label for="agreeNo">아니오, 동의하지 않습니다</label>
+            </span>
+        </p><!-- //radio_chk -->
+    </div><!-- //personal_box -->
+
+
+    <div class="form_wrap">
+        <form action="">
+            <fieldset>
+                <legend>기본정보</legend>
+                <div class="form_line">
+                    <label for="userName" class="form_tit">성명</label>
+                    <div class="inp_box">
+                        <p class="inp_outer">
+                            <input type="text" id="userName">
+                        </p><!-- //inp_outer -->
+                    </div><!-- //inp_box -->
+                </div><!-- //form_line -->
+
+                <div class="form_line">
+                    <label for="title" class="form_tit">거주지역</label>
+                    <p class="sel_box">
+                        <select name="" id="">
+                            <option value="">서울</option>
+                            <option value="">대전</option>
+                            <option value="">대구</option>
+                            <option value="">부산</option>
+                        </select>
+                    </p><!-- //sel_box -->
+                </div><!-- //form_line -->
+
+                <div class="form_line">
+                    <label for="title" class="form_tit">직업</label>
+                    <p class="sel_box">
+                        <select name="" id="">
+                            <option value="">직업선택</option>
+                        </select>
+                    </p><!-- //sel_box -->
+                </div><!-- //form_line -->
+
+                <div class="form_line">
+                    <label for="userAffiliation" class="form_tit">소속</label>
+                    <div class="inp_box">
+                        <p class="inp_outer">
+                            <input type="text" id="userAffiliation" placeholder="소속 입력">
+                        </p><!-- //inp_outer -->
+                    </div><!-- //inp_box -->
+                </div><!-- //form_line -->
+
+
+                <div class="form_line">
+                    <label for="uesrEmail1" class="form_tit">이메일</label>
+                    <p class="inp_box">
+                        <input type="text" id="uesrEmail1">
+                        <input type="text" id="uesrAddress">
+                        <em>@</em>
+                        <select name="selAddress" id="selAddress">
+                            <option value="naver.com">naver.com</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="hanmail.net">hanmail.net</option>
+                            <option value="hotmail.com">hotmail.com</option>
+                            <option value="nate.com">nate.com</option>
+                            <option value="yahoo.co.kr">yahoo.co.kr</option>
+                            <option value="etc">직접 입력</option>
+                        </select>
+                    </p>
+                </div><!-- //form_line -->
+
+                <div class="form_line">
+                    <label for="userPhoneNo1" class="form_tit">전화번호</label>
+                    <div class="inp_box">
+                        <p class="inp_outer">
+                            <input type="text" id="userPhoneNo1" name="userPhoneNo1" maxlength="3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" >
+                        </p><!-- //inp_outer -->
+                    </div>
+                    <em>-</em>
+                    <div class="inp_box">
+                        <p class="inp_outer">
+                            <input type="text" id="userPhoneNo2" name="userPhoneNo2" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" >
+                        </p><!-- //inp_outer -->
+                    </div>
+                    <em>-</em>
+                    <div class="inp_box">
+                        <p class="inp_outer">
+                            <input type="text" id="userPhoneNo3" name="userPhoneNo3" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" >
+                        </p><!-- //inp_outer -->
+                    </div>
+                </div><!-- //form_line -->
+
+                <div class="form_line">
+                    <label for="userPosition" class="form_tit">직책</label>
+                    <div class="inp_box">
+                        <p class="inp_outer">
+                            <input type="text" id="userPosition">
+                        </p>
+                    </div>
+                </div><!-- //form_line -->
+            </fieldset>
+
+
+            <fieldset>
+                <legend>의견등록</legend>
+
+                <div class="form_line">
+                    <label for="title" class="form_tit">NDC 부문</label>
+                    <p class="sel_box">
+                        <select name="" id="">
+                            <option value="">전환</option>
+                            <option value="">산업</option>
+                            <option value="">건물</option>
+                            <option value="">수송</option>
+                            <option value="">농축수산</option>
+                            <option value="">폐기물</option>
+                            <option value="">수소</option>
+                            <option value="">흡수원</option>
+                            <option value="">CCUS</option>
+                            <option value="">국외감축</option>
+                        </select>
+                    </p><!-- //sel_box -->
+                </div><!-- //form_line -->
+
+                
+                <div class="form_line">
+                    <strong class="form_tit">의견분야</strong>
+                    <div class="chk_box">
+                        <span class="chk">
+                            <input type="checkbox" id="" value="">
+                            <label for=""><span>정책제언</span></label>
+                        </span>
+                        <span class="chk">
+                            <input type="checkbox" id="" value="">
+                            <label for=""><span>감축수단</span></label>
+                        </span>
+                        <span class="chk">
+                            <input type="checkbox" id="" value="">
+                            <label for=""><span>기타</span></label>
+                        </span>
+                    </div>
+                </div><!-- //form_line -->
+                
+
+                <div class="form_line">
+                    <label for="title" class="form_tit">제목</label>
+                    <div class="inp_box">
+                        <p class="inp_outer">
+                            <input type="text" id="title" placeholder="30자 이내로 작성해주세요">
+                        </p><!-- //inp_outer -->
+                    </div><!-- //inp_box -->
+                </div><!-- //form_line -->
+
+                
+                <div class="form_line">
+                    <label for="" class="form_tit">내용</label>
+                    <div>
+                        <textarea name="" id="" placeholder="1,000자 이내로 작성해주세요"></textarea>
+                    </div>
+                </div><!-- //form_line -->
+
+                <div class="form_line">
+                    <label for="">첨부</label>
+
+                    <div class="file_box">
+                        <input type="text" class="upload_name" value="파일선택" disabled="disabled">
+                        <label for="ex_filename">업로드</label> 
+                        <input type="file" id="ex_filename" class="upload_hidden"> 
+                    </div>
+
+                </div><!-- //form_line -->
+
+            </fieldset>
+
+            <script>
+
+                $(function(){
+                    var fileTarget = $('.file_box .upload-hidden');
+                    fileTarget.on('change', function(){ 
+                        if(window.FileReader){
+                            var filename = $(this)[0].files[0].name;
+                        }else{ 
+                            var filename = $(this).val().split('/').pop().split('\\').pop();
+                        }
+                        $(this).siblings('.upload_name').val(filename);
+                    });
+                });
+
+
+
+
+            
+            </script>
+
+        </form>
+    </div><!-- //form_wrap -->
+    
+
+
+
+
+
+
+</body>
+</html>
