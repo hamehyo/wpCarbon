@@ -287,6 +287,9 @@ select{
 }
 
 /* main_section */
+#main{
+    background-color: #f7fdf0;
+}
 .main_section{
     padding: 140px 0 0;
 }
@@ -344,6 +347,8 @@ select{
     align-items: stretch;
     justify-content: flex-start;
     width: 100%;
+    position: relative;
+    z-index:2;
 }
 .main_section .main_menu_list li{
     overflow: hidden;
@@ -384,8 +389,8 @@ select{
     color: #231f20;
 }
 .main_section .main_menu_list li img{
-    margin-top: -20px;
-    width: 214px;
+    margin-top: -35px;
+    width: 215px;
     text-align: right;
 }
 .main_section .main_menu_list li span{
@@ -616,12 +621,12 @@ select{
 }
 .main_section .deco_earth{
     position: absolute;
-    top: 50%;
-    left: 66%;
+    top: 38%;
+    left: 64%;
     transform: translate(-50%,-50%);
-    width: 34%;
-    max-width: 440px;
-    z-index: 1;
+    width: 100%;
+    max-width: 634px;
+    z-index: 2;
 }
 
 /* op_section */
@@ -991,11 +996,16 @@ select{
     padding-top: 0;
 }
 .wrapper .register_section{
+    margin:-40px auto 120px;
+
+}
+
+.wrapper .register_section .register_inner{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin:-40px auto 120px;
+    margin: 0 auto;
     padding: 30px;
     max-width: 788px;
     min-height: 400px;
@@ -1005,6 +1015,9 @@ select{
     border-radius: 12px;
     box-sizing: border-box;
 }
+
+
+
 .wrapper .register_section .img_reg{
     margin: 0 0 22px;
 }
@@ -1031,33 +1044,61 @@ select{
     color:#fff;
     background-color: #75CD84;
 }
-.wrapper .register_section.info01{
-    margin-bottom: 60px;
-    padding: 42px 40px;
+.wrapper .register_section.info01 .register_inner{
+    padding: 52px 50px 50px;
+    max-width: 1600px;
     text-align: left;
-} 
+}
 .wrapper .register_section .personal_box{
-    padding: 0 0 40px;
+    padding: 0 0 52px;
+    width: 100%;
 }
 .wrapper .register_section .tit{
-    padding: 0 0 8px;
+    padding: 0 0 14px;
     line-height: 1.3;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 32px;
     color: #000;
     border-bottom: 3px solid #000;
 }
 .wrapper .register_section .personal_box .txt{
+    overflow: hidden;
+    position: relative;
+}
+.wrapper .register_section .personal_box .txt::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: calc( 100% - 10px);
+    height: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.wrapper .register_section .personal_box .txt .txt_inner{
     overflow-y: auto;
-    margin: 0 0 20px;
-    padding: 20px 10px 10px;
-    height: 155px;
+    padding: 20px 10px 30px;
+    height:200px;
     line-height: 1.6;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 20px;
     color: #000;
     word-break: keep-all;
     box-sizing: border-box;
+}
+.wrapper .register_section .personal_box .txt .txt_inner::-webkit-scrollbar {
+    width: 10px;
+}
+.wrapper .register_section .personal_box .txt .txt_inner::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+.wrapper .register_section .personal_box .txt .txt_inner::-webkit-scrollbar-thumb { 
+    background-color: #dfdfdf;
+    border-radius: 5px;
+}
+.wrapper .register_section .personal_box .txt .txt_inner::-webkit-scrollbar-button {
+    display: none;
 }
 .wrapper .register_section .personal_box .txt ul{
     padding: 4px 0 8px;
@@ -1070,7 +1111,7 @@ select{
     content: "";
     position: absolute;
     left: 10px;
-    top: 10px;
+    top: 14px;
     width: 2px;
     height: 2px;
     background-color: #000;
@@ -1094,8 +1135,8 @@ select{
     position: relative;
     border-radius: 50%;
     box-sizing: border-box;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     border: 1px solid #dfdfdf;
     cursor: pointer;
 }
@@ -1108,49 +1149,55 @@ select{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
     background-color: #54D497;
     border-radius: 50%;
     z-index: 1;
 }
 .wrapper .register_section .personal_box .radio_chk .rd_box label{
     padding-left: 10px;
+    font-size: 20px;
     cursor: pointer;
 }
 .wrapper .register_section .form_box{
     width: 100%;
 }
 .wrapper .register_section .form_box .form_box_inner{
-    padding: 20px 0 30px;
+    margin-bottom: 10px;
+    padding: 40px 0 10px;
     border: none;
+}
+.wrapper .register_section .form_box.info{
+    border-bottom: 1px solid #000;;
 }
 .wrapper .register_section .form_box .form_line{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    margin: 0 0 10px;
+    position: relative;
+    margin: 0 0 14px;
 }
 .wrapper .register_section .form_box .form_line .form_tit{
-    width: 110px;
+    width: 247px;
     line-height: 50px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 20px;
     color: #000;
 }
 .wrapper .register_section .form_box .form_line .inp_box{
-    width: calc(100% - 110px);
+    width: calc(100% - 247px);
 }
 .wrapper .register_section .form_box .form_line .inp_box .inp_outer{
     width: 100%;
-    height: 50px;
+    height: 60px;
 }
 .wrapper .register_section .form_box .form_line .inp_box .inp_outer input{
     padding: 10px 20px;
     width: 100%;
     height: 100%;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     color: #231F20;
     background-color: #fff;
     border:1px solid #dfdfdf;
@@ -1165,8 +1212,8 @@ select{
     border-color: #75CD84;
 }
 .wrapper .register_section .form_box .form_line .sel_box{
-    width: calc(100% - 110px);
-    height: 50px;
+    width: calc(100% - 247px);
+    height: 60px;
 }
 .wrapper .register_section .form_box .form_line .sel_box select{
     padding: 10px 20px 10px 15px;
@@ -1216,19 +1263,26 @@ select{
     margin: 10px 0 0;
     width: 100%;
 }
+
+
+
 .wrapper .conts_wrap .btn_form_box{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 40px 0 0;
-    margin: 20px 0 0;
-    border-top: 1px solid #000;
+    /* margin: 20px 0 0; */
+    /* border-top: 1px solid #000; */
     box-sizing: border-box;
 }
+.wrapper .conts_wrap .btn_form_box.info01{
+    border-top: none;
+}
+
 .wrapper .conts_wrap .btn_form_box .btn{
     display: inline-block;
-    padding: 12px 0;
-    min-width: 246px;
+    padding: 17px 0;
+    min-width: 382px;
     font-weight: 500;
     font-size: 20px;
     background-color: transparent;
@@ -1262,19 +1316,33 @@ select{
     margin-right: 10px;
     border-color: #8C8C8C;
 }
+.wrapper .conts_wrap .btn_form_box .btn.btn_list:hover{
+    color: #fff;
+    background-color: #2F3B49;
+    border-color: #2F3B49;
+}
 .wrapper .conts_wrap .btn_form_box .btn.btn_op{
     background-color: #fff;
 }
+.wrapper .conts_wrap .btn_form_box .btn.btn_op:hover{
+    color: #fff;
+    background-color: #75CD84;
+}
 .wrapper .register_section.info02{
     margin-bottom: 60px;
+} 
+.wrapper .register_section.info02 .register_inner{
     padding: 0;
     text-align: left;
+    max-width: 1600px;
     background-color: transparent;
     border-top: 3px solid #000;
     border-radius: 0;
-} 
-.wrapper .register_section .form_box .form_line{
-    position: relative;
+}
+.wrapper .register_section .form_box .form_line.file{
+    margin: 0;
+    padding: 0 0 30px;
+    border-bottom: 1px solid #000;
 }
 .wrapper .register_section .form_box .form_line .form_tit.ndc img{
     margin-top: -4px;
@@ -1346,7 +1414,7 @@ select{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: calc(100% - 110px);
+    width: calc(100% - 247px);
 }
 .wrapper .register_section .form_box .form_line .chk_box .chk{
     display: flex;
@@ -1391,8 +1459,8 @@ select{
     background: url("../imgs/ico_chk_box_on.webp") no-repeat center/cover;  
 }
 .wrapper .register_section .form_box .form_line .chk_box .chk input + label span {
-    line-height: 24px;
-    font-size: 18px;
+    line-height: 30px;
+    font-size: 20px;
     color: #231F20;
 }
 .wrapper .register_section .form_box .form_line.op_field{
@@ -1400,7 +1468,7 @@ select{
 }
 .wrapper .register_section .form_box .form_line .txt_box{
     position: relative;
-    width: calc( 100% - 110px);
+    width: calc( 100% - 247px);
 }
 .wrapper .register_section .form_box .form_line .txt_box .txt_num{
     position: absolute;
@@ -1499,20 +1567,55 @@ select{
     background-color: #f7fdf0;
 }
 .wrapper .conts_wrap .op_view_box{
-    margin: -40px auto 0;
-    padding:36px 40px;
-    max-width: 788px;
+    margin: -80px auto 0;
+    padding:52px 50px 0;
+    max-width: 1600px;
     background-color: #fff;
     border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     box-sizing: border-box;
 }
 .wrapper .conts_wrap .op_view_box .top{
     position: relative;
 }
+.wrapper .conts_wrap .op_view_box .top .tit{
+    padding: 0 20px 32px 0;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 32px;
+    color: #231F20;
+    word-break: keep-all;
+}
+.wrapper .conts_wrap .op_view_box .top .tit_info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 20px;
+}
+.wrapper .conts_wrap .op_view_box .top .tit_info p{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 40px;
+    font-size: 20px;
+}
+.wrapper .conts_wrap .op_view_box .top .tit_info p:last-child{
+    margin-right: 0;
+}
+
+.wrapper .conts_wrap .op_view_box .top .tit_info p strong{
+    padding-right: 20px;
+    font-weight: 700;
+    color: #000;
+}
+.wrapper .conts_wrap .op_view_box .top .tit_info p span{
+    color:#231F20;
+}
 .wrapper .conts_wrap .op_view_box .top .btn_share{
     position: absolute;
     right: 0;
-    top: 0;
+    bottom: 20px;
 }
 .wrapper .conts_wrap .op_view_box .top .btn_share.on{
     background-color: #52A245;
@@ -1541,90 +1644,49 @@ select{
 .wrapper .conts_wrap .op_view_box .top .btn_share span{
     display: none;
 }
-.wrapper .conts_wrap .op_view_box .top p{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-bottom: 20px;
-}
-.wrapper .conts_wrap .op_view_box .top p strong{
-    width: 95px;
-    font-weight: 700;
-    font-size: 14px;
-    color: #000;
-}
-.wrapper .conts_wrap .op_view_box .top p span{
-    width: calc(100% - 95px);
-    font-weight: 400;
-    font-size: 18px;
-    color: #231F20;
-}
-.wrapper .conts_wrap .op_view_box .top p span.tit{
-    font-weight: 700;
-}
 .wrapper .conts_wrap .op_view_box .txt{
-    margin: 10px 0 0;
-    padding: 30px 0;
+    padding: 40px 0;
     width: 100%;
     line-height: 1.7;
-    font-size: 18px;
+    font-size: 20px;
     color: #231F20;
-    border-top: 3px solid #000;
+    border-top: 1px solid #000;
     box-sizing: border-box;
 }
-.wrapper .conts_wrap .op_view_box .info{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 0 30px;
-    font-size: 16px;
-    color: #939598;
-}
-.wrapper .conts_wrap .op_view_box .info .name{
-    position: relative;
-    margin-left: 10px;
-    padding-left: 10px;
-}
-.wrapper .conts_wrap .op_view_box .info .name::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 52%;
-    transform:translateY(-50%);
-    width:1px;
-    height: 10px;
-    background:#939598;
-}
-.wrapper .conts_wrap .op_view_box .attachedfile{
+.wrapper .conts_wrap .attachedfile_box{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 16px 0 8px;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    margin: 0 auto;
+    padding: 35px 50px 30px;
+    max-width: 1600px;
+    width: 100%;
+    background-color: #F5F5F5;
     box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
-.wrapper .conts_wrap .op_view_box .attachedfile strong{
+.wrapper .conts_wrap .attachedfile_box strong{
     display: block;
     width: 95px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 20px;
     color: #000;
 }
-.wrapper .conts_wrap .op_view_box .attachedfile ul{
+.wrapper .conts_wrap .attachedfile_box ul{
     width: calc( 100% - 95px );
 }
-.wrapper .conts_wrap .op_view_box .attachedfile ul li{
+.wrapper .conts_wrap .attachedfile_box ul li{
     padding: 0 10px 10px 0;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     color: #231F20;
 }
-.wrapper .conts_wrap .op_view_box .attachedfile ul li span{
+.wrapper .conts_wrap .attachedfile_box ul li span{
     position: relative;
     padding-right: 32px;
 }
-.wrapper .conts_wrap .op_view_box .attachedfile ul li span::after{
+.wrapper .conts_wrap .attachedfile_box ul li span::after{
     content: "";
     position: absolute;
     right: 0;
@@ -1649,7 +1711,7 @@ select{
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.8);
     z-index: 12;
 }
 .popup_wrap .popup_inner{
@@ -1847,10 +1909,10 @@ select{
 
 @media only screen and (max-width: 1820px) {
 
+
     .main_section .deco_earth {
-        top: 50%;
-        left: 68%;
-        width: 28%;
+        top: 40%;
+        max-width: 600px;
     }
     .main_section .lf_box {
         max-width: 880px;
@@ -1862,15 +1924,21 @@ select{
 @media only screen and (max-width: 1670px) {
 
     .main_section .deco_earth {
-        top: 52%;
+        top:40%;
         left: 66%;
-        width: 24%;
+        max-width: 500px;
     }
     .main_section .lf_box {
         max-width: 800px;
     }
     .main_section .main_menu_list li{
         height: 200px;
+    }
+
+
+    .main_section .main_menu_list li img{
+        margin-top: -45px;
+        width: 175px;
     }
 
     .op_section {
@@ -1898,9 +1966,15 @@ select{
         font-size: 100px;
     }
     .main_section .deco_earth {
-        top: 54%;
-        left: 69%;
-        width: 20%;
+        top: 49%;
+        left: 71%;
+        max-width: 300px;
+    }
+    .main_section .main_menu_list li:first-child a {
+        padding: 30px 20px 30px 20px;
+    }
+    .main_section .main_menu_list li strong{
+        font-size: 30px;
     }
     .main_section .main_menu_list li img{
         margin-top: -30px;
@@ -1952,6 +2026,9 @@ select{
     #header .user_box{
         font-size: 15px;
     }
+    .main_section .tit_box{
+        padding: 0 0 220px;
+    }
     .main_section .tit_box .top span{
         font-size: 24px;
     }
@@ -1966,10 +2043,11 @@ select{
         right: -20px;
     }
     .main_section .deco_earth {
-        top: 34%;
-        left: 58%;
-        width: 150px;
-        z-index: -1;
+        top: 39%;
+        left: 38px;
+        transform: translate(0, -50%);
+        max-width: 190px;
+        z-index: 0;
     }
     .wrapper {
         margin-top: 60px;
@@ -2207,18 +2285,13 @@ select{
     .btn_share.on::after{
         display: none;
     } */
+    
 
-    .wrapper .conts_wrap .op_view_box .top .btn_share.on::after{
-        width:44px;
-        height: 44px;
-        font-size: 12px;
-        line-height: 44px;
-    }
     .main_section .deco_earth {
         top: 40%;
         left: 12px;
         transform: translate(0, -50%);
-        width: 160px;
+        max-width: 190px;
     }
     .wrapper .top_conts_wrap .inner{
         padding: 0 10px;
@@ -2241,6 +2314,7 @@ select{
     }   
     .wrapper .conts_wrap .btn_form_box .btn{
         min-width: calc((100% - 10px) / 2);
+        padding: 12px 0;
         font-size: 16px;
     }
     .wrapper .register_section .form_box .form_line .sel_box select{
@@ -2253,7 +2327,7 @@ select{
         padding: 0 12px;
     }
     .main_section .tit_box{
-        padding: 0 0 220px;
+        padding: 0 0 250px;
         width: 60%;
     }
     .main_section .tit_box .top strong{
@@ -2371,7 +2445,7 @@ select{
 
     .wrapper .register_section{
         margin-top: 0;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
         min-height: 330px;
     }
     .wrapper .register_section .btn_reg{
@@ -2380,26 +2454,80 @@ select{
     .wrapper .register_section.info01{
         padding: 20px 10px;
     }
+    .wrapper .register_section.info01 .register_inner{
+        padding: 20px 12px 30px;
+    }
     .wrapper .register_section .tit{
+        padding: 0 0 6px;
         font-size: 20px;
     }
-    .wrapper .register_section.info01{
-        margin-bottom: 10px;
+    .wrapper .register_section .personal_box{
+        padding: 0 0 20px;
     }
+    .wrapper .register_section .personal_box .txt::after{
+        height: 0;
+    }
+    .wrapper .register_section .personal_box .txt .txt_inner{
+        padding: 12px 4px 20px;
+        height: 146px;
+        line-height: 1.3;
+        font-size: 15px;
+    }
+    .wrapper .register_section .personal_box .txt ul li{
+        padding-left: 14px;
+    }
+    .wrapper .register_section .personal_box .txt ul li::before{
+        top: 8px;
+    }
+    .wrapper .register_section .personal_box .radio_chk{
+        padding: 10px 0 0;
+        text-align: left;
+    }
+    .wrapper .register_section .personal_box .radio_chk .rd_box{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 0 8px;
+    }
+    .wrapper .register_section .personal_box .radio_chk .rd_box label{
+        font-size: 14px;
+    }
+    .wrapper .register_section .form_box .form_box_inner{
+        padding: 20px 0 10px;
+    }
+
+    .wrapper .conts_wrap .btn_form_box.info01{
+        padding: 30px 0 0;
+    }
+
+
+
+
+
+
+
+
     .wrapper .register_section.info02{
         margin-bottom: 30px;
+    }
+    
+    .wrapper .register_section .form_box .form_line{
+        flex-direction: column;
+        margin:0 0 10px
     }
     .wrapper .register_section .form_box .form_line .file_name_box{
         flex-direction: column;
         align-items: flex-start;
     }
-    .wrapper .register_section .form_box .form_line{
-        flex-direction: column;
-        margin:0 0 18px
-    }
     .wrapper .register_section .form_box .form_line .form_tit{
         width: 100%;
         line-height: 34px;
+        font-size: 16px;
+    }
+    .wrapper .register_section .form_box .form_line .inp_box .inp_outer{
+        height: 50px;
+    }
+    .wrapper .register_section .form_box .form_line .sel_box{
+        height: 50px;
     }
     .wrapper .register_section .form_box .form_line .sel_box {
         width: 100%;
@@ -2443,52 +2571,70 @@ select{
         padding-bottom: 60px;
     }
     .wrapper .conts_wrap .op_view_box{
-        padding: 20px 12px 30px;
+        margin: 0 auto;
+        padding: 30px 12px 10px;
         line-height: 1.5;
         font-size: 16px;
     }
+    .wrapper .conts_wrap .op_view_box .top .btn_share.on::after{
+        width:44px;
+        height: 44px;
+        font-size: 12px;
+        line-height: 44px;
+    }
     
-    .wrapper .conts_wrap .op_view_box .top p{
+    .wrapper .conts_wrap .op_view_box .top .tit {
+        padding: 0 8px 14px 0;
+        font-size: 20px;
+    }
+    .wrapper .conts_wrap .op_view_box .top .tit_info{
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: flex-start;
     }
-    .wrapper .conts_wrap .op_view_box .top p strong{
+    .wrapper .conts_wrap .op_view_box .top .tit_info p {
+        margin-right: 0;
+        padding: 2px 0 4px;
         width: 100%;
-    }
-    .wrapper .conts_wrap .op_view_box .top p span{
-        padding: 8px 0 0;
-        width: 100%;
-    }
-
-    .wrapper .conts_wrap .op_view_box .txt{
-        padding-bottom: 20px;
         font-size: 16px;
     }
-    .wrapper .conts_wrap .op_view_box .info{
-        font-size: 14px;
+    .wrapper .conts_wrap .op_view_box .top .tit_info p strong{
+        padding: 0;
+        width: 100px;
+        box-sizing: border-box;
     }
-
-
-    .wrapper .conts_wrap .op_view_box .attachedfile{
+    .wrapper .conts_wrap .op_view_box .top .tit_info p span{
+        width: calc( 100% - 100px);
+    }
+    .wrapper .conts_wrap .op_view_box .txt{
+        padding: 20px 0;
+        line-height: 1.4;
+        font-size: 16px;
+    }
+    .wrapper .conts_wrap .attachedfile_box{
         flex-direction: column;
         align-items: flex-start;
-        padding: 16px 0 10px;
+        padding: 16px 12px;
     }
-    .wrapper .conts_wrap .op_view_box .attachedfile strong{
+    .wrapper .conts_wrap .attachedfile_box strong{
         padding: 0 0 10px;
+        font-size: 16px;
     }
-    .wrapper .conts_wrap .op_view_box .attachedfile ul{
+    .wrapper .conts_wrap .attachedfile_box ul{
         width: 100%;
     }
-    .wrapper .conts_wrap .op_view_box .attachedfile ul li{
-        padding: 0 0 4px 0;
+    .wrapper .conts_wrap .attachedfile_box ul li{
+        padding: 0 0 8px 0;
         font-size: 15px;
+    }
+    .wrapper .conts_wrap .attachedfile_box ul li span{
+        padding-right: 28px;
     }
 
 
-
-
-
+    .popup_wrap .popup_inner{
+        width: 80%;
+    }
 
 
 
@@ -2534,6 +2680,19 @@ select{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -2544,7 +2703,7 @@ select{
         padding: 120px 0 0;
     }
     .main_section .tit_box{
-        padding: 0 0 200px;
+        padding: 0 0 230px;
         width: 60%;
     }
     .main_section .tit_box .top{
@@ -2703,7 +2862,7 @@ select{
     }
     .main_section .deco_earth {
         top: 32%;
-        width: 170px;
+        max-width: 172px;
     }
 
     .op_section{
@@ -2764,6 +2923,52 @@ select{
         display: none;
     }
 
+    .popup_wrap .popup_inner{
+        padding: 30px 12px;
+        width: 92%;
+    }
+    .popup_wrap .popup_inner .popup_conts dl dt{
+        padding: 0 0 16px;
+        font-size:24px;
+    }
+    .popup_wrap .popup_inner .popup_conts dl dd{
+        font-size: 16px;
+    }
+    .popup_wrap .popup_inner .popup_conts ul{
+        padding: 30px 0;
+    }
+    .popup_wrap .popup_inner .popup_conts ul li{
+        margin-right: 12px;
+        width: 70px;
+        height: 70px;
+        letter-spacing: -0.5px;
+        font-size: 14px;
+    }
+    .popup_wrap .popup_inner .popup_conts ul li::before{
+        width: 70px;
+        height: 70px;
+    }
+    .popup_wrap .popup_inner .popup_conts ul li p{
+        line-height: 1.1;
+        letter-spacing: -0.5px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .popup_wrap .popup_inner .popup_conts ul li::after{
+        right: -12px;
+        width: 12px;
+        height: 4px;
+    }
+    .popup_wrap .popup_inner .popup_conts ul li:last-child{
+        margin-right: 0;
+    }
+    .popup_wrap .popup_inner .popup_conts .btn_popup_close{
+        padding: 12px 0;
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+
 
 
 
@@ -2795,7 +3000,7 @@ select{
     }
     .main_section .deco_earth {
         top: 30%;
-        width: 150px;
+        max-width: 170px;
         
     }
 
