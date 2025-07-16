@@ -110,6 +110,12 @@ $(function (){
         $(this).parents(".popup_wrap").hide();
     });
 
+    $(".qna_catagory li a").on("click", function(e){
+        $(".qna_catagory li").removeClass("on");
+        $(this).parent("li").addClass("on");
+        e.preventDefault();
+    });
+
 });
 
 

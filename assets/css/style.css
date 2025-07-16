@@ -424,7 +424,7 @@ select{
 .main_section .btn_link_list ul li::after{
     content: "";
     position: absolute;
-    right: 25px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     width: 8px;
@@ -920,6 +920,40 @@ select{
 .wrapper .qna_section{
     padding: 0 120px 30px;
 }
+.wrapper .qna_section .qna_catagory{
+    margin:  0 0 40px;
+    width: 100%;
+    border-bottom: 1px solid #a9a9a9;
+}
+.wrapper .qna_section .qna_catagory ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .qna_section .qna_catagory ul li{
+    margin: 0 20px;
+}
+.wrapper .qna_section .qna_catagory ul li a{
+    display: block;
+    position: relative;
+    padding: 29px 5px;
+    font-size: 24px;
+    color: #231F20;
+}
+.wrapper .qna_section .qna_catagory ul li.on a{
+    color: #52A245;
+}
+.wrapper .qna_section .qna_catagory ul li.on a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 10px);
+    height: 6px;
+    background-color: #52A245;
+}
+
 .wrapper .qna_section .qna_list{
     padding: 0 0 20px;
 }
@@ -956,7 +990,7 @@ select{
     display: block;
     width: calc( 100% - 200px);
     font-weight: 400;
-    font-size: 22px; 
+    font-size: 24px; 
     color: #231F20;
 }
 .wrapper .qna_section .qna_list li .question_box .arrow{
@@ -984,8 +1018,8 @@ select{
 .wrapper .qna_section .qna_list li .answer{
     display: none;
     padding: 22px 130px 50px;
-    line-height: 1.5;
-    font-size: 18px;
+    line-height: 1.7;
+    font-size: 20px;
     color: #231F20;
     word-break: keep-all;
 }
@@ -1909,7 +1943,6 @@ select{
 
 @media only screen and (max-width: 1820px) {
 
-
     .main_section .deco_earth {
         top: 40%;
         max-width: 600px;
@@ -1920,6 +1953,11 @@ select{
 
 }
 
+@media only screen and (max-width: 1778px) {
+    .wrapper .qna_section .qna_catagory ul li{
+        margin: 0 12px;
+    }
+}
 
 @media only screen and (max-width: 1670px) {
 
@@ -1934,25 +1972,25 @@ select{
     .main_section .main_menu_list li{
         height: 200px;
     }
-
-
     .main_section .main_menu_list li img{
         margin-top: -45px;
         width: 175px;
     }
-
     .op_section {
-        margin: -325px 0 0;
+        margin: -333px 0 0;
+    }
+
+    .wrapper .qna_section .qna_catagory ul li{
+        margin: 0 5px;
+    }
+    .wrapper .qna_section .qna_catagory ul li a{
+        font-size: 22px;
     }
 
 
 }
 
-
-
-
 @media only screen and (max-width: 1480px) {
-
 
     .main_section .tit_box .top span{
         letter-spacing: -1px;
@@ -1966,9 +2004,9 @@ select{
         font-size: 100px;
     }
     .main_section .deco_earth {
-        top: 49%;
-        left: 71%;
-        max-width: 300px;
+        top: 41%;
+        left: 70%;
+        max-width: 420px;
     }
     .main_section .main_menu_list li:first-child a {
         padding: 30px 20px 30px 20px;
@@ -2002,6 +2040,8 @@ select{
     .wrapper .qna_section{
         padding: 0 40px 30px;
     }
+
+
     #footer .footer_info {
         margin-left: 70px;
     }
@@ -2014,6 +2054,12 @@ select{
 
 }
 
+@media only screen and (max-width: 1350px) {
+
+    .main_section .deco_earth {
+        left: 73.5%;
+    }
+}
 
 @media only screen and (max-width: 1280px) {
 
@@ -2079,6 +2125,35 @@ select{
         padding: 14px 0;
         font-size: 16px;
     }
+
+
+    .wrapper .qna_section .qna_catagory ul li{
+        margin: 0 10px;
+    }
+    .wrapper .qna_section .qna_catagory ul li:first-child{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .wrapper .qna_section .qna_catagory ul li:last-child{
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .wrapper .qna_section .qna_catagory ul li a{
+        padding: 15px 5px;
+        height: 54px;
+        text-align: center;
+        word-break: keep-all;
+        
+    }
+    .wrapper .qna_section .qna_catagory ul li:first-child a{
+        padding-top: 30px;
+        height: 40px;
+    }
+    .wrapper .qna_section .qna_catagory ul li:nth-child(2) a{
+        padding-top: 30px;
+        height: 40px;
+    }
+
     #footer .footer_info {
         margin-left: 30px;
     }
@@ -2090,9 +2165,19 @@ select{
 
 }
 
+@media only screen and (max-width: 1080px) {
 
+    .main_section .lf_box{
+        max-width: 700px;
+    }
+    .main_section .main_menu_list li a{
+        padding: 30px 15px;
+    }
+    .wrapper .qna_section .qna_catagory ul li a{
+        font-size: 20px;
+    }
 
-
+}
 
 @media only screen and (max-width: 1023px) {
 
@@ -2203,7 +2288,6 @@ select{
         background:url("../imgs/ico_nav_arrow.webp") no-repeat center/cover;
     }
     #nav .nav_list li a{
-        
         display: block;
         width: 100%;
         height: auto;
@@ -2286,7 +2370,6 @@ select{
         display: none;
     } */
     
-
     .main_section .deco_earth {
         top: 40%;
         left: 12px;
@@ -2296,7 +2379,6 @@ select{
     .wrapper .top_conts_wrap .inner{
         padding: 0 10px;
     }
-
     .wrapper .conts_wrap .op_tab .op_tab_sel{
         text-align: right;
         padding: 0 0 12px;
@@ -2304,10 +2386,28 @@ select{
     .wrapper .conts_wrap .op_tab select{
         padding: 12px 12px 10px 14px;
         width: 102px;
-        font-size: 16px;
+        font-size: 14px;
         background-position: 94% 50%;
         background-color: #fff;
         border:none;
+        border-radius: 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }   
+    .wrapper .qna_section .qna_catagory{
+        margin: 0 0 20px;
+        border-bottom: none;
+    }
+    .wrapper .conts_wrap .op_qna_sel{
+        text-align: right;
+    }
+    .wrapper .conts_wrap .op_qna_sel select{
+        padding: 12px 12px 10px 14px;
+        width: 160px;
+        font-size: 14px;
+        background-position: 94% 50%;
+        background-color: #fff;
+        border:1px solid #75CD84;
         border-radius: 25px;
         box-sizing: border-box;
         cursor: pointer;
@@ -2401,6 +2501,9 @@ select{
         font-size: 12px;
     }
     .op_section .op_list li .ut .date{
+        font-size: 14px;
+    }
+    .op_section .op_list li .ut .name{
         font-size: 14px;
     }
 
@@ -2695,7 +2798,6 @@ select{
 
 }
 
-
 @media only screen and (max-width: 767px) {
 
 
@@ -2974,7 +3076,6 @@ select{
 
 }
 
-
 @media only screen and (max-width: 392px) {
 
     .main_section .tit_box {
@@ -3007,7 +3108,6 @@ select{
 
 
 }
-
 
 @media only screen and (max-height: 780px) {
 
