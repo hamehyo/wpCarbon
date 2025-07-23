@@ -117,26 +117,6 @@ $(function (){
         e.preventDefault();
     });
 
-    // 개인정보처리방침 열기
-    $(".btn_py").on("click", function(e){
-        $(".whole_popup.py").show();
-        $("body").addClass("lock");
-        e.preventDefault();
-    });
-    //  이용약관 열기
-    $(".btn_ndc").on("click", function(e){
-        $(".whole_popup.ndc").show();
-        $("body").addClass("lock");
-        e.preventDefault();
-    });
-    
-    // 개인정보처리방침 & 이용약관 닫기
-    $(".btn_whole_close").on("click", function(e){
-        $(".whole_popup").hide();
-        $("body").removeClass("lock");
-    });
-
-
 });
 
 

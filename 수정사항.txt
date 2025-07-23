@@ -1,0 +1,11 @@
+
+* [ assets ] 폴더 아래 3개 수정(폴더 그래도 덮어쓰기 요청)
+ - assets > js > ui.js
+ - assets > css > style.css
+ - assets > imgs 이미지 추가
+
+* [ html ] 새 파일 2개 추가.
+  ->  404.html 
+  -> footer_popup.html 
+      : footer 태그 안 개인정보처리방침, 이용약관의 a 태그에 클래스명 추가( line98,99 )
+      : footer 태그 아래 개인정보처리방침,이용약관 팝업 소스 추가( line 110 ~ 399 / line 401 ~ 547 )
