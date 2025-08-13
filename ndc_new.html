@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탄소중립</title>
+
+    <!-- 기본 메타 정보 -->
+    <meta name="description" content=".">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+
+    <!-- Open Graph (Facebook & SNS 공유) -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+
+    <!-- Twitter Card (트위터 공유) -->
+    <meta name="twitter:card" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+
+
+    <script src="./assets/js/lib/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/lib/jquery-ui.min.js"></script>
+    <script src="./assets/js/ui.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+    <dl id="skip_nav" class="only_pc">
+        <dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+        <dd>
+            <a href="#header"><em>주 메뉴 바로가기</em></a>
+        </dd>
+        <dd>
+            <a href="#wrapper"><em>본문으로 바로가기</em></a><!-- sub 페이지들은 #wrapper-->                 
+        </dd>
+        <dd>
+            <a href="#footer"><em>하단으로 바로가기</em></a>
+        </dd>
+    </dl><!-- //skip_nav -->
+
+    <header id="header">
+        <div class="inner">
+
+            <h1 class="logo">
+                <a href="/" >
+                    <span class="hidden_txt">대통령 직속 2050 탄소중립녹색성장위원회 2035 국가온실가스감축목표(NDC) 의겸수렴</span>
+                </a>
+            </h1>
+        
+            <nav id="nav">
+                <div class="only_mo mo_user">
+                    <p class="info"><strong>홍길동</strong>님, 안녕하세요</p>
+                    <ul>
+                        <li><a href="#">나의 의견보기</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                </div><!-- //mo_user -->
+
+                <ul class="nav_list">
+                    <li>
+                        <a href="./ndc.html">NDC란?</a>
+                    </li>
+                    <li class="active">
+                        <a href="./ndc_new.html">2035 NDC 초안</a>
+                    </li>
+                    <li>
+                        <a href="./register01.html">의견등록</a>
+                    </li>
+                    <li>
+                        <a href="./opinions.html">의견조회</a>
+                    </li>
+                </ul><!--//nav_list -->
+            </nav>
+            
+            <button class="only_mo btn_hamburger">
+                <span></span>
+                <span></span>
+            </button><!-- //btn_hamburger -->
+
+        </div><!-- //inner -->
+    </header>
+
+    <div id="wrapper" class="wrapper">
+        
+        <div class="top_conts_wrap">
+            <div class="inner">
+                <h3>2035 국가온실가스감축목표 NDC (초안)</h3>
+                <h4>2035 국가온실가스감축목표 NDC (초안)의 주요 내용을 안내드립니다 </h4>
+            </div><!-- //inner -->
+        </div><!-- //top_conts_wrap -->
+
+        <div class="conts_wrap ndc"><!-- 2035 NDC 초안 페이지 일 경우 클래스명 ndc 추가-->
+            <div class="inner">
+
+                <div class="output_sum_box">
+                    <h3><p>배출량 합계</p></h3>
+                    <div class="txt">
+                        <dl class="actual">
+                            <dt>2018 실적</dt>
+                            <dd>727.6</dd>
+                        </dl>
+                        <dl class="goal">
+                            <dt>2035 목표</dt>
+                            <dd>
+                                <div class="first">
+                                    <p>기존 NDC <br>(2023.04)</p>
+                                    <strong>436.6 (40.0%)</strong>
+                                </div>
+                                <div>
+                                    <p>수정 NDC <br>(2025.08)</p>
+                                    <strong>436.6 (40.0%)</strong>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div><!-- //txt -->
+                </div><!-- //output_sum_box -->
+
+                <div class="list_outer">
+                    <h4>배출</h4>
+                    <div class="list_box">
+                        <ul>
+                            <li>
+                                <h5>전환</h5>
+                                <div class="detail_txt">
+                                    <dl class="d_txt01">
+                                        <dt>2018 실적</dt>
+                                        <dd>727.6</dd>
+                                    </dl>
+                                    <dl class="d_txt02 arrow">
+                                        <dt>2035 목표</dt>
+                                        <dd>
+                                            <em>기존 NDC (2023.04)</em>
+                                            <span>149.9 (44.4%)</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="d_txt03">
+                                        <dt>수정 NDC (2025.08)</dt>
+                                        <dd>145.9 (45.9%)</dd>
+                                    </dl>
+                                    <dl class="d_txt04">
+                                        <dt>주요 감축수단</dt>
+                                        <dd>
+                                            <p>전원믹스 재구성 (석탄↓, 재생e ↑ 등)</p>
+                                            <p>전력시장 개선 등 수요 효율화</p>
+                                        </dd>
+                                    </dl>
+                                </div><!-- //detail_txt -->
+                            </li>
+                            <li>
+                                <h5>산업</h5>
+                                <div class="detail_txt">
+                                    <dl class="d_txt01">
+                                        <dt>2018 실적</dt>
+                                        <dd>260.5</dd>
+                                    </dl>
+                                    <dl class="d_txt02 arrow">
+                                        <dt>2035 목표</dt>
+                                        <dd>
+                                            <em>기존 NDC (2023.04)</em>
+                                            <span>226.6 (14.5%)</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="d_txt03">
+                                        <dt>수정 NDC (2025.08)</dt>
+                                        <dd>230.7 (11.4%)</dd>
+                                    </dl>
+                                    <dl class="d_txt04">
+                                        <dt>주요 감축수단</dt>
+                                        <dd>
+                                            <p>공정효율화, 연·원료 전환</p>
+                                            <p>배출거래제 고도화를 통한 자발적인 감축활동 유도</p>
+                                        </dd>
+                                    </dl>
+                                </div><!-- //detail_txt -->
+                            </li>
+                            <li>
+                                <h5>건물</h5>
+                                <div class="detail_txt">
+                                    <dl class="d_txt01">
+                                        <dt>2018 실적</dt>
+                                        <dd>52.1</dd>
+                                    </dl>
+                                    <dl class="d_txt02">
+                                        <dt>2035 목표</dt>
+                                        <dd>
+                                            <em>기존 NDC (2023.04)</em>
+                                            <span>35.0 (32.8%)</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="d_txt03">
+                                        <dt>수정 NDC (2025.08)</dt>
+                                        <dd>35.0 (32.8%)</dd>
+                                    </dl>
+                                    <dl class="d_txt04">
+                                        <dt>주요 감축수단</dt>
+                                        <dd>
+                                            <p>제로에너지건축, 그린리모델링</p>
+                                            <p>건물 효율개선</p>
+                                        </dd>
+                                    </dl>
+                                </div><!-- //detail_txt -->
+                            </li>
+                            <li>
+                                <h5>수송</h5>
+                                <div class="detail_txt">
+                                    <dl class="d_txt01">
+                                        <dt>2018 실적</dt>
+                                        <dd>98.1</dd>
+                                    </dl>
+                                    <dl class="d_txt02">
+                                        <dt>2035 목표</dt>
+                                        <dd>
+                                            <em>기존 NDC (2023.04)</em>
+                                            <span>61.0 (37.8%)</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="d_txt03">
+                                        <dt>수정 NDC (2025.08)</dt>
+                                        <dd>61.0 (37.8%)</dd>
+                                    </dl>
+                                    <dl class="d_txt04">
+                                        <dt>주요 감축수단</dt>
+                                        <dd>
+                                            <p>무공해차·선박 보급</p>
+                                            <p>내연차 기준강화, 주행거리 감축 </p>
+                                        </dd>
+                                    </dl>
+                                </div><!-- //detail_txt -->
+                            </li>
+                            <li>
+                                <h5>농축수산</h5>
+                                <div class="detail_txt">
+                                    <dl class="d_txt01">
+                                        <dt>2018 실적</dt>
+                                        <dd>24.7</dd>
+                                    </dl>
+                                    <dl class="d_txt02">
+                                        <dt>2035 목표</dt>
+                                        <dd>
+                                            <em>기존 NDC (2023.04)</em>
+                                            <span>18.0 (27.1%)</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="d_txt03">
+                                        <dt>수정 NDC (2025.08)</dt>
+                                        <dd>18.0 (27.1%)</dd>
+                                    </dl>
+                                    <dl class="d_txt04">
+                                        <dt>주요 감축수단</dt>
+                                        <dd>
+                                            <p>저탄소 농축산업 기술 보급</p>
+                                            <p>설비 효율화·저탄소화</p>
+                                        </dd>
+                                    </dl>
+                                </div><!-- //detail_txt -->
+                            </li>
+                            <li>
+                                <h5>폐기물</h5>
+                                <div class="detail_txt">
+                                    <dl class="d_txt01">
+                                        <dt>2018 실적</dt>
+                                        <dd>17.1</dd>
+                                    </dl>
+                                    <dl class="d_txt02">
+                                        <dt>2035 목표</dt>
+                                        <dd>
+                                            <em>기존 NDC (2023.04)</em>
+                                            <span>9.1 (46.8%)</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="d_txt03">
+                                        <dt>수정 NDC (2025.08)</dt>
+                                        <dd>9.1 (46.8%)</dd>
+                                    </dl>
+                                    <dl class="d_txt04">
+                                        <dt>주요 감축수단</dt>
+                                        <dd>
+                                            <p>폐기물 원천감량</p>
+                                            <p>고부가가치 재활용 확대</p>
+                                        </dd>
+                                    </dl>
+                                </div><!-- //detail_txt -->
+                            </li>
+                            <li>
+                                <h5>수소</h5>
+                                <div class="detail_txt">
+                                    <dl class="d_txt01">
+                                        <dt>2018 실적</dt>
+                                        <dd>-</dd>
+                                    </dl>
+                                    <dl class="d_txt02 arrow">
+                                        <dt>2035 목표</dt>
+                                        <dd>
+                                            <em>기존 NDC (2023.04)</em>
+                                            <span>7.6</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="d_txt03">
+                                        <dt>수정 NDC (2025.08)</dt>
+                                        <dd>8.4</dd>
+                                    </dl>
+                                    <dl class="d_txt04">
+                                        <dt>주요 감축수단</dt>
+                                        <dd>
+                                            <p>그린수소 실증 및 인프라 구축</p>
+                                            <p>수소 활용범위 확대</p>
+                                        </dd>
+                                    </dl>
+                                </div><!-- //detail_txt -->
+                            </li>
+                            <li>
+                                <h5>탈루 등</h5>
+                                <div class="detail_txt">
+                                    <dl class="d_txt01">
+                                        <dt>2018 실적</dt>
+                                        <dd>5.6</dd>
+                                    </dl>
+                                    <dl class="d_txt02">
+                                        <dt>2035 목표</dt>
+                                        <dd>
+                                            <em>기존 NDC (2023.04)</em>
+                                            <span>3.9</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="d_txt03">
+                                        <dt>수정 NDC (2025.08)</dt>
+                                        <dd>3.9</dd>
+                                    </dl>
+                                    <dl class="d_txt04">
+                                        <dt>주요 감축수단</dt>
+                                        <dd>
+                                            <p>무공해차·선박 보급</p>
+                                            <p>내연차 기준강화, 주행거리 감축 </p>
+                                        </dd>
+                                    </dl>
+                                </div><!-- //detail_txt -->
+                            </li>
+
+                        </ul>
+                    </div><!--//list_box -->
+                </div><!--//list_outer -->
+
+                <div class="list_outer">
+                    <h4>흡수 및 제거</h4>
+                    <div class="list_box">
+                        <ul>
+                            <li>
+                                <h5>흡수원</h5>
+                                <div class="detail_txt">
+                                    <dl class="d_txt01">
+                                        <dt>2018 실적</dt>
+                                        <dd>-41.3</dd>
+                                    </dl>
+                                    <dl class="d_txt02">
+                                        <dt>2035 목표</dt>
+                                        <dd>
+                                            <em>기존 NDC (2023.04)</em>
+                                            <span>-26.7</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="d_txt03">
+                                        <dt>수정 NDC (2025.08)</dt>
+                                        <dd>-26.7</dd>
+                                    </dl>
+                                    <dl class="d_txt04">
+                                        <dt>주요 감축수단</dt>
+                                        <dd>
+                                            <p>산림·습지 보호·복원</p>
+                                            <p>도시숲 등 신규흡수원 확대</p>
+                                        </dd>
+                                    </dl>
+                                </div><!-- //detail_txt -->
+                            </li>
+                            <li>
+                                <h5>CCUS</h5>
+                                <div class="detail_txt">
+                                    <dl class="d_txt01">
+                                        <dt>2018 실적</dt>
+                                        <dd>-</dd>
+                                    </dl>
+                                    <dl class="d_txt02 arrow">
+                                        <dt>2035 목표</dt>
+                                        <dd>
+                                            <em>기존 NDC (2023.04)</em>
+                                            <span>-10.3</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="d_txt03">
+                                        <dt>수정 NDC (2025.08)</dt>
+                                        <dd>-11.2</dd>
+                                    </dl>
+                                    <dl class="d_txt04">
+                                        <dt>주요 감축수단</dt>
+                                        <dd>
+                                            <p>근거법 제정 및 상용화 R&D</p>
+                                            <p>CCS 저장소 확보</p>
+                                        </dd>
+                                    </dl>
+                                </div><!-- //detail_txt -->
+                            </li>
+                            <li>
+                                <h5>국제감축</h5>
+                                <div class="detail_txt">
+                                    <dl class="d_txt01">
+                                        <dt>2018 실적</dt>
+                                        <dd>-</dd>
+                                    </dl>
+                                    <dl class="d_txt02 arrow">
+                                        <dt>2035 목표</dt>
+                                        <dd>
+                                            <em>기존 NDC (2023.04)</em>
+                                            <span>-33.5</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="d_txt03">
+                                        <dt>수정 NDC (2025.08)</dt>
+                                        <dd>-37.5</dd>
+                                    </dl>
+                                    <dl class="d_txt04">
+                                        <dt>주요 감축수단</dt>
+                                        <dd>
+                                            <p>국외 감축활동 수행 후 크레딧 거래</p>
+                                        </dd>
+                                    </dl>
+                                </div><!-- //detail_txt -->
+                            </li>
+                        </ul>
+                    </div><!--//list_box -->
+                </div><!--//list_outer -->              
+
+            </div><!-- //inner -->
+        </div><!-- //conts_wrap -->
+
+
+    </div><!-- //wrapper -->
+    
+    <!-- Start :  footer 수정 -->
+    <div class="foot-go-link">
+        <div class="foot-go-link__in">
+            <div class="foot-go-link__in__item">
+                <a href="#" class="foot-go-link__in__item__a">다른 행정기관</a>
+                <div class="foot-go-link__in__item__box">
+                    <div class="depth">
+                        <div class="sec_box">
+                            <ul>
+                                <li><a href="https://www.president.go.kr" target="_blank" title="새창열림">대한민국 대통령실</a></li>
+                                <li><a href="http://www.opm.go.kr/" target="_blank" title="새창으로 열림">국무조정실</a></li>
+                                <li><a href="https://www.moef.go.kr" target="_blank" title="새창열림">기획재정부</a></li>
+                                <li><a href="https://www.moe.go.kr" target="_blank" title="새창열림">교육부</a></li>
+                                <li><a href="https://www.msit.go.kr" target="_blank" title="새창열림">과학기술정보통신부</a></li>
+                                <li><a href="https://www.mofa.go.kr" target="_blank" title="새창열림">외교부</a></li>
+                                <li><a href="https://www.unikorea.go.kr" target="_blank" title="새창열림">통일부</a></li>
+                                <li><a href="https://www.moj.go.kr" target="_blank" title="새창열림">법무부</a></li>
+                                <li><a href="https://www.mnd.go.kr" target="_blank" title="새창열림">국방부</a></li>
+                                <li><a href="https://www.mois.go.kr" target="_blank" title="새창열림">행정안전부</a></li>
+                                <li><a href="https://www.mcst.go.kr" target="_blank" title="새창열림">문화체육관광부</a></li>
+                                <li><a href="https://www.mafra.go.kr" target="_blank" title="새창열림">농림축산식품부</a></li>
+                                <li><a href="https://www.motie.go.kr" target="_blank" title="새창열림">산업통상자원부</a></li>
+                                <li><a href="https://www.mohw.go.kr" target="_blank" title="새창열림">보건복지부</a></li>
+                                <li><a href="https://www.me.go.kr" target="_blank" title="새창열림">환경부</a></li>
+                                <li><a href="https://www.moel.go.kr" target="_blank" title="새창열림">고용노동부</a></li>
+                                <li><a href="http://www.mogef.go.kr" target="_blank" title="새창열림">여성가족부</a></li>
+                                <li><a href="https://www.molit.go.kr/portal.do" target="_blank" title="새창열림">국토교통부</a></li>
+                                <li><a href="https://www.mof.go.kr " target="_blank" title="새창열림">해양수산부</a></li>
+                                <li><a href="https://www.mss.go.kr/" target="_blank" title="새창열림">중소벤처기업부</a></li>
+                                <li><a href="https://www.bai.go.kr" target="_blank" title="새창열림">감사원</a></li>
+                                <li><a href="https://www.nis.go.kr" target="_blank" title="새창열림">국가정보원</a></li>
+                                <li><a href="https://www.kcc.go.kr" target="_blank" title="새창열림">방송통신위원회</a></li>
+                                <li><a href="https://www.humanrights.go.kr" target="_blank" title="새창열림">국가인권위원회</a></li>
+                                <li><a href="https://www.mpva.go.kr/mpva/index.do" target="_blank" title="새창열림">국가보훈처</a></li>
+                                <li><a href="https://www.mpm.go.kr" target="_blank" title="새창열림">인사혁신처</a></li>
+                                <li><a href="https://www.moleg.go.kr" target="_blank" title="새창열림">법제처</a></li>
+                                <li><a href="https://www.mfds.go.kr" target="_blank" title="새창열림">식품의약품안전처</a></li>
+                                <li><a href="https://www.ftc.go.kr" target="_blank" title="새창열림">공정거래위원회</a></li>
+                                <li><a href="https://www.fsc.go.kr" target="_blank" title="새창열림">금융위원회</a></li>
+                                <li><a href="https://www.acrc.go.kr" target="_blank" title="새창열림">국민권익위원회</a></li>
+                                <li><a href="https://www.nssc.go.kr" target="_blank" title="새창열림">원자력안전위원회</a></li>
+                                <li><a href="https://www.nts.go.kr" target="_blank" title="새창열림">국세청</a></li>
+                                <li><a href="https://www.customs.go.kr" target="_blank" title="새창열림">관세청</a></li>
+                                <li><a href="https://www.pps.go.kr" target="_blank" title="새창열림">조달청</a></li>
+                                <li><a href="https://kostat.go.kr" target="_blank" title="새창열림">통계청</a></li>
+                                <li><a href="https://www.spo.go.kr" target="_blank" title="새창열림">검찰청</a></li>
+                                <li><a href="https://www.mma.go.kr" target="_blank" title="새창열림">병무청</a></li>
+                                <li><a href="https://www.dapa.go.kr" target="_blank" title="새창열림">방위사업청</a></li>
+                                <li><a href="https://www.police.go.kr" target="_blank" title="새창열림">경찰청</a></li>
+                                <li><a href="https://www.nfa.go.kr/nfa/" target="_blank" title="새창열림">소방청</a></li>
+                                <li><a href="https://www.cha.go.kr" target="_blank" title="새창열림">국가유산청</a></li>
+                                <li><a href="https://www.rda.go.kr" target="_blank" title="새창열림">농촌진흥청</a></li>
+                                <li><a href="https://www.forest.go.kr" target="_blank" title="새창열림">산림청</a></li>
+                                <li><a href="https://www.kipo.go.kr" target="_blank" title="새창열림">특허청</a></li>
+                                <li><a href="https://www.kma.go.kr" target="_blank" title="새창열림">기상청</a></li>
+                                <li><a href="https://www.saemangeum.go.kr" target="_blank" title="새창열림">새만금개발청</a></li>
+                                <li><a href="https://www.naacc.go.kr" target="_blank" title="새창열림">행정중심복합도시건설청</a></li>
+                                <li><a href="https://www.kcg.go.kr/kcg/main.do" target="_blank" title="새창열림">해양경찰청</a></li>
+                                <li><a href="https://www.pipc.go.kr/np/" target="_blank" title="새창열림">개인정보보호위원회</a></li>
+                                <li><a href="https://www.kdca.go.kr/" target="_blank" title="새창열림">질병관리청</a></li>
+                                <li><a href="https://www.kasa.go.kr/" target="_blank" title="새창열림">우주항공청</a></li>
+                                <li><a href="https://www.oka.go.kr/web/main.do" target="_blank" title="새창열림">재외동포청</a></li>
+                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-go-link__in__item">
+                <a href="#" class="foot-go-link__in__item__a">지방자치단체</a>
+                <div class="foot-go-link__in__item__box">
+                    <div class="depth">
+                        <div class="sec_box">
+                            <ul>
+                                <li><a href="http://www.seoul.go.kr/" target="_blank" title="새창으로 열림">서울특별시</a></li>
+                                <li><a href="http://www.busan.go.kr/" target="_blank" title="새창으로 열림">부산광역시</a></li>
+                                <li><a href="http://www.daegu.go.kr/" target="_blank" title="새창으로 열림">대구광역시</a></li>
+                                <li><a href="http://www.incheon.go.kr/" target="_blank" title="새창으로 열림">인천광역시</a></li>
+                                <li><a href="http://www.gwangju.go.kr/" target="_blank" title="새창으로 열림">광주광역시</a></li>
+                                <li><a href="http://www.daejeon.go.kr/" target="_blank" title="새창으로 열림">대전광역시</a></li>
+                                <li><a href="http://www.ulsan.go.kr/" target="_blank" title="새창으로 열림">울산광역시</a></li>
+                                <li><a href="http://www.sejong.go.kr/" target="_blank" title="새창으로 열림">세종특별자치시</a></li>
+                                <li><a href="http://www.gg.go.kr/" target="_blank" title="새창으로 열림">경기도</a></li>
+                                <li><a href="http://www.provin.gangwon.kr/" target="_blank" title="새창으로 열림">강원도</a></li>
+                                <li><a href="http://www.chungbuk.go.kr/" target="_blank" title="새창으로 열림">충청북도</a></li>
+                                <li><a href="http://www.chungnam.go.kr" target="_blank" title="새창으로 열림">충청남도</a></li>
+                                <li><a href="http://www.jeonbuk.go.kr/" target="_blank" title="새창으로 열림">전라북도</a></li>
+                                <li><a href="http://www.jeonnam.go.kr/" target="_blank" title="새창으로 열림">전라남도</a></li>
+                                <li><a href="http://www.gyeongbuk.go.kr/" target="_blank" title="새창으로 열림">경상북도</a></li>
+                                <li><a href="http://www.gyeongnam.go.kr/" target="_blank" title="새창으로 열림">경상남도</a></li>
+                                <li><a href="http://www.jeju.go.kr/" target="_blank" title="새창으로 열림">제주특별자치도</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__in">
+            <p class="foot_img" style="text-indent:0;background-image:none !important">
+                <img src="./assets/imgs/foot_img.webp" alt="대통령직속 2050 탄소중립녹색성장위원회 로고"></p>
+            <div class="copy_box">
+                <ul class="float_wrap">
+                    <li class="persnal-rule"><a href="https://www.2050cnc.go.kr/base/contents/view?contentsNo=71&amp;menuLevel=2&amp;menuNo=127">개인정보처리방침</a></li>
+                    <li><a href="https://www.2050cnc.go.kr/base/contents/view?contentsNo=47&amp;menuLevel=2&amp;menuNo=54">저작권보호정책</a></li>
+                    <li><a href="https://www.2050cnc.go.kr/base/contents/view?contentsNo=48&amp;menuLevel=2&amp;menuNo=55">사이트맵</a></li>
+                </ul>
+            </div>
+            <div class="copy_box2">
+                <address class="item1">
+                    <ul>
+                        <li>(우 30121) 세종특별자치시 가름로 180 세종파이낸스센터3차 3층 / 정부통합콜센터 - 국번없이 110</li>
+                    </ul>
+                </address>
+                <p class="item2">COPYRIGHT © 2021 BY 2050탄소중립녹색성장위원회 ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End :  footer 수정 -->
+
+    <div class="btn_floating_register">
+        <a href="#">
+            <img src="./assets/imgs/ico_op_register.webp" alt="전구아이콘">
+            <span>의견 등록</span>
+        </a>
+    </div><!-- //btn_floating_register -->
+
+</body>
+</html>

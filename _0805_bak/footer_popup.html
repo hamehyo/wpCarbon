@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탄소중립</title>
+
+    <!-- 기본 메타 정보 -->
+    <meta name="description" content=".">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+
+    <!-- Open Graph (Facebook & SNS 공유) -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+
+    <!-- Twitter Card (트위터 공유) -->
+    <meta name="twitter:card" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+
+
+    <script src="./assets/js/lib/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/lib/jquery-ui.min.js"></script>
+    <script src="./assets/js/ui.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+    <dl id="skip_nav">
+        <dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+        <dd>
+            <a href="#header"><em>주 메뉴 바로가기</em></a>
+        </dd>
+        <dd>
+            <a href="#main"><em>본문으로 바로가기</em></a><!-- main페이지만 #main-->               
+        </dd>
+        <dd>
+            <a href="#footer"><em>하단으로 바로가기</em></a>
+        </dd>
+    </dl><!-- //skip_nav -->
+
+    <header id="header" class="main_hd"> <!-- main페이지만 클래스명 main_hd 추가 (main_hd 클래스명이 있어야 로고만 남고 가려집니다.)-->  
+        <div class="inner">
+
+            <button class="only_mo btn_hamburger">
+                <span></span>
+                <span></span>
+            </button>
+
+            <h1 class="logo logo1"><a href="#" ><span class="hidden_txt">탄소중립</span></a></h1>
+
+            <nav id="nav">
+                <div class="only_mo mo_user">
+                    <p class="info"><strong>홍길동</strong>님, 안녕하세요</p>
+                    <ul>
+                        <li><a href="#">나의 의견보기</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                    
+                </div>
+                <ul class="nav_list">
+                    <li>
+                        <a href="./ndc.html">2035 NDC(안)</a>
+                    </li>
+                    <li>
+                        <a href="./opinions.html">의견조회</a>
+                    </li>
+                    <li>
+                        <a href="./register01.html">의견등록</a>
+                    </li>
+                    <li>
+                        <a href="./resource.html">자료실</a>
+                    </li>
+                </ul><!--//nav_list -->
+            </nav>
+
+            <h2 class="logo slogan"><a href="#"><span class="hidden_txt">2023 국가 온실가스 감축 목표(NDC) 여러분의 의견을 듣고 있어요!</span></a></h2>
+            
+        </div><!-- //inner -->
+    </header>
+
+    <main id="main" style="height: 1000px;background-color: pink;">
+        <!-- 컨텐츠영역 -->
+    </main><!-- //main -->
+
+    <footer id="footer">
+        <div class="inner">  
+            <div class="flex_box">
+                <h2><a href="#"><img src="./assets/imgs/logo_ft.webp" alt="대통력직속2050 탄소중립 녹색성장 위원회"></a></h2>
+                <div class="footer_info">
+                    <ul class="corp_list">
+                        <li><a href="#" class="btn_py">개인정보처리방침</a></li>
+                        <li><a href="#" class="btn_ndc">이용약관</a></li>
+                    </ul><!-- //corp_list -->
+                    <p class="address">(우 30121) 세종특별자치시 가름로 180 세종파이낸스센터3차 3층</p>
+                    <p class="copyright">COPYRIGHT &#169; 2021 BY 2050탄소중립녹색성장위원회 ALL RIGHTS RESERVED.</p>
+                </div><!-- //footer_info -->
+                
+                <p class="refer_info">2035 NDC 의견수렴 웹사이트는 ECO 코드 및 친환경 UI/UX를 접목한 에너지소비효율이 높은 웹사이트입니다 </p>
+            </div><!-- //flex_box -->
+        </div><!-- //inner -->
+    </footer><!-- //footer -->
+
+
+    <!-- start : 2035 NDC 제출현황 => 아래 라인의 style="display: block;" 삭제요청  -->
+    <div class="popup_wrap whole_popup ndc_state" style="display: block;">
+        <div class="popup_inner">
+            <button type="button" class="btn_whole_close"><span class="hidden_txt">팝업닫기</span></button>
+            <div class="wh_conts">
+                <h3>2035 NDC 제출현황<span>(2025.7.28. 기준)</span></h3>
+                <img src="./assets/imgs/popup_ndc_state_top_img.webp" alt="2030 NDC 수립경과" class="wh_img">
+                <div class="ndc_content">
+                    <div class="tit_box">
+                        <h4>2035 NDC 제출현황 <span> (2025.7.28. 기준)</span></h4>
+                    </div>
+                    <div class="ndc_tbl_wrap">
+                        <table class="ndc_tbl">
+                            <colgroup>
+                                <col width="15%">
+                                <col width="15%">
+                                <col width="15%">
+                                <col width="15%">
+                                <col width="20%">
+                                <col width="20%">
+                            </colgroup>
+                            <thead>
+                                <tr class="first">
+                                    <th>제출순번</th>
+                                    <th>제출일</th>
+                                    <th>국가</th>
+                                    <th>기준년도</th>
+                                    <th>2030 NDC</th>
+                                    <th>2035 NDC</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2024.11.6</td>
+                                    <td>UAE</td>
+                                    <td>2019</td>
+                                    <td>-</td>
+                                    <td>47%</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2024.11.13</td>
+                                    <td>브라질</td>
+                                    <td>2005</td>
+                                    <td>-</td>
+                                    <td>59~67%</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>2024.12.19</td>
+                                    <td>미국</td>
+                                    <td>2005</td>
+                                    <td>50~52%</td>
+                                    <td>61~66%</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>2024.12.30 </td>
+                                    <td>우루과이</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>정성 목표</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>2025.1.29</td>
+                                    <td>스위스</td>
+                                    <td>1990</td>
+                                    <td>50%</td>
+                                    <td>65%</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>2025.1.30</td>
+                                    <td>영국</td>
+                                    <td>1990</td>
+                                    <td>68%</td>
+                                    <td>81%</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>2025.1.31</td>
+                                    <td>뉴질랜드</td>
+                                    <td>2005</td>
+                                    <td>50%</td>
+                                    <td>51-55%</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>2025.2.5</td>
+                                    <td>안도라</td>
+                                    <td>2005</td>
+                                    <td>45%</td>
+                                    <td>63%</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>2025.2.6</td>
+                                    <td>세인트루시아</td>
+                                    <td>2010</td>
+                                    <td>14.7%</td>
+                                    <td>32%</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>2025.2.6</td>
+                                    <td>에콰도르</td>
+                                    <td>2010</td>
+                                    <td>-</td>
+                                    <td>8%</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>2025.2.10</td>
+                                    <td>싱가포르</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>45-50MtCO2eq<br>(배출량 목표)</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>2025.2.10</td>
+                                    <td>짐바브웨</td>
+                                    <td>-</td>
+                                    <td>35%(BAU)</td>
+                                    <td>40%(BAU)</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>2025.2.10</td>
+                                    <td>마셜제도</td>
+                                    <td>2010</td>
+                                    <td>45%</td>
+                                    <td>58%</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>2025.2.12</td>
+                                    <td>캐나다</td>
+                                    <td>2005</td>
+                                    <td>40~45%</td>
+                                    <td>40~45%</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>2025.2.18</td>
+                                    <td>일본</td>
+                                    <td>2013</td>
+                                    <td>46%</td>
+                                    <td>60%</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>2025.2.21</td>
+                                    <td>몬테네그로</td>
+                                    <td>1990</td>
+                                    <td>55%</td>
+                                    <td>60%</td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>2025.2.27</td>
+                                    <td>몰디브</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>25.2%<span>(BAU)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>2025.2.27</td>
+                                    <td>쿠바</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>정성 목표</td>
+                                </tr>
+                                <tr>
+                                    <td>19</td>
+                                    <td>2025.4.30</td>
+                                    <td>케냐</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>35%<span>(BAU)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>2025.5.6</td>
+                                    <td>몰도바</td>
+                                    <td>1990</td>
+                                    <td>71%</td>
+                                    <td>75%</td>
+                                </tr>
+                                <tr>
+                                    <td>21</td>
+                                    <td>2025.5.19</td>
+                                    <td>네팔</td>
+                                    <td>-</td>
+                                    <td>17.12%<span>(BAU)</span></td>
+                                    <td>26.79%<span>(BAU)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>2025.6.14</td>
+                                    <td>벨리즈</td>
+                                    <td>-</td>
+                                    <td>3,017ktCO2eq<span>(BAU)</span></td>
+                                    <td>6,234ktCO2eq<span>(BAU)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>2025.6.19</td>
+                                    <td>소말리아</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>34%<span>(BAU)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>24</td>
+                                    <td>2025.6.26</td>
+                                    <td>노르웨이</td>
+                                    <td>1990</td>
+                                    <td>55%</td>
+                                    <td>70~75%</td>
+                                </tr>
+                                <tr>
+                                    <td>25</td>
+                                    <td>2025.7.16</td>
+                                    <td>모나코</td>
+                                    <td>1990</td>
+                                    <td>55%</td>
+                                    <td>67.6%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- //ndc_tbl_wrap-->
+                    
+
+
+                </div>
+
+                <div class="ndc_content">
+                    <h4>국가별 주요 내용</h4>
+
+                    <p class="country_tit first">
+                        <img src="./assets/imgs/ico_country_01.webp" alt="미국 국기">
+                        <strong>미국</strong>
+                    </p><!-- //country_tit -->
+                    <ul class="country_txt">
+                        <li>
+                            <span>제출일</span>
+                            <p>2024.12.19</p>
+                        </li>
+                        <li>
+                            <span>목표</span>
+                            <p>2005년 대비 61~66% <strong>(2030 NDC대비 11~ 16%p 상향)</strong></p>
+                        </li>
+                        <li>
+                            <span>주요수단</span>
+                            <p>
+                                인플레이션 감축법(Inflation Reduction Act; IRA) 및 초당적 인프라법(Bipartisan Infrastructure Law; BIL)을 기반으로 청정에너지 발전 비중 증감,
+                                전국에 전기자동차 충전소 설치 추진, 대중교통 개선, 어린이 통학 버스(school bus) 등 탈탄소 연료 사용 추진, 
+                                저소득 가정 그린 리모델링(weatherization) 지원, 차세대 청정에너지 기술 투자, 복원·재조림 둥(BIL)을 IRA를 통한 세엑공제, 직접투자 등 금융지원 및 유인책으로 
+                                뒷받침하는 구조. 기후 스마트농업 등을 포함한 전반적인 에너지효율화, 기술혁신, 전기화를 통한 저감.
+                            </p>
+                        </li>
+                        <li>
+                            <span>원문링크</span>
+                            <p>
+                                <a href="https://unfccc.int/sites/default/files/2024-12/United%20States%202035%20NDC.pd" target="_blank">
+                                    https://unfccc.int/sites/default/files/2024-12/United%20States%202035%20NDC.pdf
+                                </a>
+                            </p>
+                        </li>
+                    </ul><!-- //country_txt -->
+
+
+                    <p class="country_tit">
+                        <img src="./assets/imgs/ico_country_02.webp" alt="영국 국기">
+                        <strong>영국</strong>
+                    </p><!-- //country_tit -->
+                    <ul class="country_txt">
+                        <li>
+                            <span>제출일</span>
+                            <p>2025.1.30</p>
+                        </li>
+                        <li>
+                            <span>목표</span>
+                            <p>1990 대비 81% <strong>(2030 NDC대비 13%p 상향)</strong></p>
+                        </li>
+                        <li>
+                            <span>주요수단</span>
+                            <p>
+                                국가 적응 프로그램(National Adaptation Programme; NAP) 및 지역별 기후변화법을 통한 풍력 등 청정에너지 전환, 
+                                수송 부문의 바이오연료 및 에너지효율화, 탄소 포집·저장·활용(CCUS), 배출권거래제. 
+                                이를 위해 내륙 풍력발전에 대한 규제 완화, 태양광 확대, 탄소포집 산업 육성, 건물 에너지효율 향상, 공공분야 탈탄소화 추진.<br>
+                                <strong>※ ITMO 등 국제감축사업은 현재 고려하고 있지 않음.</strong>
+                            </p>
+                        </li>
+                        <li>
+                            <span>원문링크</span>
+                            <p>
+                                <a href="https://unfccc.int/sites/default/files/2025-01/UK%27s%202035%20NDC%20ICTU.pdf" target="_blank">
+                                    https://unfccc.int/sites/default/files/2025-01/UK%27s%202035%20NDC%20ICTU.pdf
+                                </a>
+                            </p>
+                        </li>
+                    </ul><!-- //country_txt -->
+
+                    <p class="country_tit">
+                        <img src="./assets/imgs/ico_country_03.webp" alt="일본 국기">
+                        <strong>일본</strong>
+                    </p><!-- //country_tit -->
+                    <ul class="country_txt">
+                        <li>
+                            <span>제출일</span>
+                            <p>2025.2.18</p>
+                        </li>
+                        <li>
+                            <span>목표</span>
+                            <p>2013 대비 60% <strong>(2030 NDC대비 14%p 상향)</strong></p>
+                        </li>
+                        <li>
+                            <span>주요수단</span>
+                            <p>
+                                지구온난화 대책 계획(Plan for Global Warming Countermeasures)을 기반으로 에너지 보존(conservation),
+                                재생에너지 전환, 녹색 식량체계 전략(Green Food System Strategy) 농수산·임업 분야 GHG 배출량 저감, 수송·건물 분야 탈탄소화 등.
+                                재생에너지의 경우 바이오매스·폐기물 재활용 등도 포함. 모든 감축수단은 경제성장도 염두에 둘 것.</p>
+                        </li>
+                        <li>
+                            <span>원문링크</span>
+                            <p>
+                                <a href="env.go.jp/content/000249336.pdf" target="_blank">
+                                    env.go.jp/content/000249336.pdf
+                                </a>
+                                <a href="https://unfccc.int/sites/default/files/2025-02/Japans%202035-2040%20NDC.pdf" target="_blank">
+                                    https://unfccc.int/sites/default/files/2025-02/Japans%202035-2040%20NDC.pdf
+                                </a>
+                            </p>
+                        </li>
+                    </ul><!--  //country_txt -->
+                    
+                    <p class="country_tit">
+                        <img src="./assets/imgs/ico_country_04.webp" alt="캐나다 국기">
+                        <strong>캐나다</strong>
+                    </p><!-- //country_tit -->
+                    <ul class="country_txt">
+                        <li>
+                            <span>제출일</span>
+                            <p>2025.2.12</p>
+                        </li>
+                        <li>
+                            <span>목표</span>
+                            <p>2005년 대비 45~50% <strong>(2030 NDC대비 5~10%p 상향)</strong></p>
+                        </li>
+                        <li>
+                            <span>주요수단</span>
+                            <p>
+                                화석 연료세·배출기반가격제(Output-Based Pricing System)와 같은 배출권거래제 등의 탄소가격제 추진,
+                                전기자동차 전환 촉진, 2030까지 석탄 화력 발전의 점진적 폐쇄 등 전력망 탈탄소화,
+                                그린 리모델링 등 주거 관련 에너지 효율화 참여 독려를 위한 재정 유인책 추진, 클린테크를 통한 농업분야 배출량 저감, 
+                                수소·CCUS 등 청정에너지 산업 육성.
+                            </p>
+                        </li>
+                        <li>
+                            <span>원문링크</span>
+                            <p>
+                                <a href="https://unfccc.int/sites/default/files/2025-02/Canada%27s%202035%20Nationally%20Determined%20Contribution_ENc.pdf" target="_blank">
+                                    https://unfccc.int/sites/default/files/2025-02/Canada%27s%202035%20Nationally%20Determined%20Contribution_ENc.pdf
+                                </a>
+                            </p>
+                        </li>
+                    </ul><!-- //country_txt -->
+
+                    <p class="country_tit">
+                        <img src="./assets/imgs/ico_country_05.webp" alt="브라질 국기">
+                        <strong>브라질</strong>
+                    </p><!-- //country_tit -->
+                    <ul class="country_txt">
+                        <li>
+                            <span>제출일</span>
+                            <p>2024.11.13</p>
+                        </li>
+                        <li>
+                            <span>목표</span>
+                            <p>2005년 대비 59~67% <strong>(2030 NDC대비 6~14%p 상향)</strong></p>
+                        </li>
+                        <li>
+                            <span>주요수단</span>
+                            <p>
+                                국가 감축 전략(ENM)을 수립. 이를 기반으로 산림의 복원·재조립 추진, 자연 생태계의 전용(conversion) 감소, 
+                                저탄소 농업 촉진, 바이오연료 확대 등을 동한 에너지믹스 탈탄소화, 청정 기술 인수·생산, 탄소가격제 도입 추진.
+                                또한, 향후 해상풍력·저탄소 수소 생산·지속 가능 항공유(sustainable aviation fuel)·CCS·바이오 연료 등을 위한 법적 근거 마련·추진을 통한 감축 추진 예정
+                            </p>
+                        </li>
+                        <li>
+                            <span>원문링크</span>
+                            <p>
+                                <a href="https://unfccc.int/sites/default/files/2024-11/Brazil_Second%20Nationally%20Determined%20Contribution%20%28NDC%29_November2024.pdf" target="_blank">
+                                    https://unfccc.int/sites/default/files/2024-11/Brazil_Second%20Nationally%20Determined%20Contribution%20%28NDC%29_November2024.pdf
+                                </a>
+                            </p>
+                        </li>
+                    </ul><!-- //country_txt -->
+
+                </div>
+
+                
+            </div><!-- //wh_conts -->
+        </div><!-- //popup_inner -->
+    </div>
+    <!-- end : 2035 NDC 제출현황   -->
+
+
+
+</body>
+</html>

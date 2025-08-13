@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탄소중립</title>
+
+    <!-- 기본 메타 정보 -->
+    <meta name="description" content=".">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="">
+
+    <!-- Open Graph (Facebook & SNS 공유) -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+
+    <!-- Twitter Card (트위터 공유) -->
+    <meta name="twitter:card" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+
+
+    <script src="./assets/js/lib/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/lib/jquery-ui.min.js"></script>
+    <script src="./assets/js/ui.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+    <dl id="skip_nav">
+        <dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+        <dd>
+            <a href="#header"><em>주 메뉴 바로가기</em></a>
+        </dd>
+        <dd>
+            <a href="#main"><em>본문으로 바로가기</em></a><!-- main페이지만 #main-->               
+        </dd>
+        <dd>
+            <a href="#footer"><em>하단으로 바로가기</em></a>
+        </dd>
+    </dl><!-- //skip_nav -->
+
+    <header id="header" class="main_hd"> <!-- main페이지만 클래스명 main_hd 추가 (main_hd 클래스명이 있어야 로고만 남고 가려집니다.)-->  
+        <div class="inner">
+
+            <button class="only_mo btn_hamburger">
+                <span></span>
+                <span></span>
+            </button>
+
+            <h1 class="logo logo1"><a href="#" ><span class="hidden_txt">탄소중립</span></a></h1>
+
+            <nav id="nav">
+                <div class="only_mo mo_user">
+                    <p class="info"><strong>홍길동</strong>님, 안녕하세요</p>
+                    <ul>
+                        <li><a href="#">나의 의견보기</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                    
+                </div>
+                <ul class="nav_list">
+                    <li>
+                        <a href="./ndc.html">2035 NDC(안)</a>
+                    </li>
+                    <li>
+                        <a href="./opinions.html">의견조회</a>
+                    </li>
+                    <li>
+                        <a href="./register01.html">의견등록</a>
+                    </li>
+                    <li>
+                        <a href="./resource.html">자료실</a>
+                    </li>
+                </ul><!--//nav_list -->
+            </nav>
+
+            <h2 class="logo slogan"><a href="#"><span class="hidden_txt">2023 국가 온실가스 감축 목표(NDC) 여러분의 의견을 듣고 있어요!</span></a></h2>
+            
+        </div><!-- //inner -->
+    </header>
+
+    <main id="main">
+
+        <section class="section main_section">
+            <div class="inner">
+
+                <h2 class="tit_box">
+                    <p class="top">
+                        <span>2035 국가 온실가스<br class="only_mo">감축 목표</span>
+                        <strong>NDC초안</strong>
+                    </p><!-- // tit_top -->
+                    <p class="btm">의견을<br class="only_mo">듣습니다!</p>
+                </h2><!-- //tit_box -->
+
+                <div class="flex_box">
+                    <div class="lf_box">
+                        <ul class="main_menu_list">
+                            <li>
+                                <a href="#">
+                                    <strong>의견을<br />등록하세요!</strong>
+                                    <img src="./assets/imgs/img_op_write.webp" alt="의견을 등록하세요">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span>2035<br />NDC 초안</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>의견조회</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>자료실</span></a>
+                            </li>
+                        </ul><!-- //main_menu_list -->
+
+                        <div class="btn_link_list">
+                            <ul class="lf_list">
+                                <li><a href="#">국가온실가스감축목표(NDC) 수립 배경</a></li>
+                                <li><a href="#">2030NDC 수립 경과(우리나라)</a></li>
+                            </ul>
+                            <ul class="rt_list">
+                                <li><a href="#">2030NDC 수립 대내외 여건</a></li>
+                                <li><a href="#">2030NDC 제출 현황(해외주요국)</a></li>
+                            </ul>
+                        </div><!-- //btn_link_list -->
+                    </div><!-- //lf_box -->
+                    <ul class="op_graph_list">
+                        <li class="gn first">
+                            <div class="li_box">
+                                <dl>
+                                    <dt class="tit">2035 NDC 수립 논의</dt>
+                                    <dd>
+                                        <p>기술작업반 구성&middot;검토</p>
+                                        <p>전문가 검토</p>
+                                        <p>관계부처 검토&middot;논의</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="gn rect">
+                            <div class="li_box">
+                                <span class="tit">2035 NDC 초안</span>
+                            </div><!-- //li_box -->
+                            <p class="top gh_rect"></p>
+                        </li>
+                        <li class="gn point">
+                            <div class="li_box">
+                                <dl>
+                                    <dt class="tit">대국민 의견수렴</dt>
+                                    <dd>
+                                        <p>온라인 및 현장 공청회<br />2025. 8. 1. ~ 2025. 8.30</p>
+                                        <p class="ing">의견수렴 진행중</p>
+                                    </dd>
+                                </dl>
+                            </div><!-- //li_box -->
+                        </li>
+                        <li class="next">
+                            <div class="li_box">
+                                <span class="tit">의견검토 및 반영</span>
+                                <p class="btm gh_rect"></p>
+                            </div><!-- //li_box -->
+                        </li>
+                        <li class="non rect">
+                            <div class="li_box">
+                                <dl>
+                                    <dt class="tit">2035 NDC 최종안 확정</dt>
+                                    <dd>
+                                        <p>탄녹위 심의 의결</p>
+                                    </dd>
+                                </dl>
+                            </div><!-- //li_box -->
+                        </li>
+                        <li class="rect last">
+                            <div class="li_box">
+                                <dl>
+                                    <dt class="tit">UN 제출</dt>
+                                    <dd>
+                                        <p>2025. 9 예정</p>
+                                    </dd>
+                                </dl>
+                            </div><!-- //li_box -->
+                        </li>
+                    </ul><!-- //op_graph_list -->
+                </div><!-- //flex_box -->
+
+                <img src="./assets/imgs/deco_earth.webp" alt="지구 캐릭터" class="deco_earth">
+
+            </div><!-- //inner -->
+        </section><!-- //main_section -->
+
+        <section class="section op_section">
+            <div class="inner">
+                <ul class="op_list">
+                    <li>
+                        <p class="badge">
+                            <em class="op_transport" style="background-color: #125FA3;">수송</em>
+                            <em class="bd_policy">정책제언</em>
+                        </p><!-- badge-->
+                        <a href="#" class="tit">
+                            <p>디지털 산업 탄소배출 감축을 위한 SW 탄소 배출량 측정 플랫폼 디지털 산업 탄소배출 감축을 위한 SW 탄소 배출량 측정 플랫폼</p>
+                        </a><!-- tit-->
+                        <div class="ut">
+                            <p>
+                                <span class="date">2025-07-02</span>
+                                <span class="name">홍*동</span>
+                            </p>
+                            <a href="#" class="btn_share"><img src="./assets/imgs/ico_share.webp" alt="공유"></a>
+                        </div><!-- ut-->
+                    </li>
+                    <li>
+                        <p class="badge">
+                            <em class="op_industry" style="background-color: #5B6B79;">산업</em>
+                            <em class="bd_reduce">감축수단</em>
+                        </p><!-- badge-->
+                        <a href="#" class="tit">
+                            <p>건물 부문 온실가스 감축 : 현실성, 실행력 </p>
+                        </a><!-- tit-->
+                        <div class="ut">
+                            <p>
+                                <span class="date">2025-07-02</span>
+                                <span class="name">홍*동</span>
+                            </p>
+                            <a href="#" class="btn_share"><img src="./assets/imgs/ico_share.webp" alt="공유"></a>
+                        </div><!-- ut-->
+                    </li>
+                    <li>
+                        <p class="badge">
+                            <em class="op_transport" style="background-color: #125FA3;">수송</em>
+                            <em class="bd_policy">정책제언</em>
+                        </p><!-- badge-->
+                        <a href="#" class="tit">
+                            <p>디지털 산업 탄소배출 감축을 위한 SW 탄소 배출량 측정 플랫폼 디지털 산업 탄소배출 감축을 위한 SW 탄소 배출량 측정 플랫폼</p>
+                        </a><!-- tit-->
+                        <div class="ut">
+                            <p>
+                                <span class="date">2025-07-02</span>
+                                <span class="name">홍*동</span>
+                            </p>
+                            <a href="#" class="btn_share"><img src="./assets/imgs/ico_share.webp" alt="공유"></a>
+                        </div><!-- ut-->
+                    </li>
+                    <li>
+                        <p class="badge">
+                            <em class="op_industry" style="background-color: #5B6B79;">산업</em>
+                            <em class="bd_reduce">감축수단</em>
+                        </p><!-- badge-->
+                        <a href="#" class="tit">
+                            <p>건물 부문 온실가스 감축 : 현실성, 실행력 있는 접근이 필요하다</p>
+                        </a><!-- tit-->
+                        <div class="ut">
+                            <p>
+                                <span class="date">2025-07-02</span>
+                                <span class="name">홍*동</span>
+                            </p>
+                            <a href="#" class="btn_share"><img src="./assets/imgs/ico_share.webp" alt="공유"></a>
+                        </div><!-- ut-->
+                    </li>
+                    <li>
+                        <p class="badge">
+                            <em class="op_transport" style="background-color: #125FA3;">수송</em>
+                            <em class="bd_policy">정책제언</em>
+                        </p><!-- badge-->
+                        <a href="#" class="tit">
+                            <p>디지털 산업 탄소배출 감축을 위한 SW 탄소 배출량 측정 플랫폼 디지털 산업 탄소배출 감축을 위한 SW 탄소 배출량 측정 플랫폼</p>
+                        </a><!-- tit-->
+                        <div class="ut">
+                            <p>
+                                <span class="date">2025-07-02</span>
+                                <span class="name">홍*동</span>
+                            </p>
+                            <a href="#" class="btn_share"><img src="./assets/imgs/ico_share.webp" alt="공유"></a>
+                        </div><!-- ut-->
+                    </li>
+                    <li>
+                        <p class="badge">
+                            <em class="op_industry" style="background-color: #5B6B79;">산업</em>
+                            <em class="bd_reduce">감축수단</em>
+                        </p><!-- badge-->
+                        <a href="#" class="tit">
+                            <p>건물 부문 온실가스 감축 : 현실성, 실행력 있는 접근이 필요하다</p>
+                        </a><!-- tit-->
+                        <div class="ut">
+                            <p>
+                                <span class="date">2025-07-02</span>
+                                <span class="name">홍*동</span>
+                            </p>
+                            <a href="#" class="btn_share"><img src="./assets/imgs/ico_share.webp" alt="공유"></a>
+                        </div><!-- ut-->
+                    </li>
+                    <li>
+                        <p class="badge">
+                            <em class="op_transport" style="background-color: #125FA3;">수송</em>
+                            <em class="bd_policy">정책제언</em>
+                        </p><!-- badge-->
+                        <a href="#" class="tit">
+                            <p>디지털 산업 탄소배출 감축을 위한 SW 탄소 배출량 측정 플랫폼 디지털 산업 탄소배출 감축을 위한 SW 탄소 배출량 측정 플랫폼</p>
+                        </a><!-- tit-->
+                        <div class="ut">
+                            <p>
+                                <span class="date">2025-07-02</span>
+                                <span class="name">홍*동</span>
+                            </p>
+                            <a href="#" class="btn_share"><img src="./assets/imgs/ico_share.webp" alt="공유"></a>
+                        </div><!-- ut-->
+                    </li>
+                    <li>
+                        <p class="badge">
+                            <em class="op_industry" style="background-color: #5B6B79;">산업</em>
+                            <em class="bd_reduce">감축수단</em>
+                        </p><!-- badge-->
+                        <a href="#" class="tit">
+                            <p>건물 부문 온실가스 감축 : 현실성, 실행력 있는 접근이 필요하다</p>
+                        </a><!-- tit-->
+                        <div class="ut">
+                            <p>
+                                <span class="date">2025-07-02</span>
+                                <span class="name">홍*동</span>
+                            </p>
+                            <a href="#" class="btn_share"><img src="./assets/imgs/ico_share.webp" alt="공유"></a>
+                        </div><!-- ut-->
+                    </li>
+                </ul><!-- op_list-->
+
+                <div class="more_box">
+                    <a href="#" class="btn_more"><span>의견 더보기</span></a>
+                </div><!-- //more_box -->
+                
+            </div><!-- inner -->
+        </section><!-- //op_section -->
+
+
+    </main><!-- //main -->
+
+    <footer id="footer">
+        <div class="inner">
+
+            <div class="flex_box">
+                <h2><a href="#"><img src="./assets/imgs/logo_ft.webp" alt="대통력직속2050 탄소중립 녹색성장 위원회"></a></h2>
+                <div class="footer_info">
+                    <p class="address">(우 30121) 세종특별자치시 가름로 180 세종파이낸스센터3차 3층</p>
+                    <p class="copyright">COPYRIGHT &#169; 2021 BY 2050탄소중립녹색성장위원회 ALL RIGHTS RESERVED.</p>
+                </div><!-- //footer_info -->
+                <p class="refer_info">2035 NDC 의견수렴 웹사이트는 ECO 코드 및 친환경 UI/UX를 접목한 에너지소비효율이 높은 웹사이트입니다 </p>
+            </div><!-- //flex_box -->
+
+        </div><!-- //inner -->
+    </footer><!-- //footer -->
+
+
+
+</body>
+</html>
